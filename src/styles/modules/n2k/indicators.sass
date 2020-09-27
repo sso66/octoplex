@@ -1,0 +1,86 @@
+// File: src/styles/modules/n2k/indicator.sass
+// Desc: style for n2k view status indicator components
+// Date: 8/13/2019
+
+// Status Indicators from System Interface Unit Monitors
+//...............................................................................        
+.n2k-indicator-4x1
+    width: 200px
+    height: 50px
+    //background: linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.8))
+    margin: 10px
+    background: #333
+    border: 2px solid #999
+    border-radius: 8px
+    padding: 1px
+    color: #ddd
+    font-size: 0.8em
+    font-family: sans-serif
+    font-weight: 600
+    text-align: center
+    text-shadow: 0px -1px #000 
+
+    -webkit-transition: all 0.5s
+    -moz-transition: all 0.5s
+    transition: all 0.5s
+
+    &:hover    
+        background: rgba(126,126,126,0.1)
+        //background: rgba(0,255,0,0.8) // green
+        //background: rgba(255,0,0,0.8) // red
+        background: rgba(255,255,0,1) // yellow
+        border: 6px double #666
+        color: silver
+        font-weight: 600
+        cursor: pointer
+        //animation: neon2 1.5s ease-in-out infinite alternate
+        //-webkit-animation: neon6 1.5s ease-in-out infinite alternate
+        //-moz-animation: neon6 1.5s ease-in-out infinite alternate
+
+
+.n2k-indicator-2x1
+    width: 200px
+    height: 50px
+    //margin: 0 10px 0 10px
+    margin: 5px  
+    border: 4px double #fff
+    border-radius: 8px
+    //background: linear-gradient(rgba(0,0,0,0.2), rgba(255,255,255,0.8))
+    background: rgba(255,0,0,1) // red
+    color: #FFF
+    font-size: 1em
+    font-family: sans-serif
+    text-align: center
+    text-shadow: 0px -1px #FFF 
+
+    -webkit-transition: all 0.5s
+    -moz-transition: all 0.5s
+    transition: all 0.5s
+
+    &:hover
+        //background: rgba(126,126,126,0.8)
+        background: rgba(0,255,0,0.8) // green
+        //background: rgba(255,0,0,0.8) // red
+        cursor: pointer
+        //-webkit-animation: neon1 1.5s ease-in-out infinite alternate
+        //-moz-animation: neon1 1.5s ease-in-out infinite alternate
+        //animation: neon1 1.5s ease-in-out infinite alternate
+
+    
+.n2k-indicator-1x1
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      align-items: center
+      align-content: flex-start
+      background-color: $white
+      border: 1px solid $red
+      color: $black
+      font-family: $family-monospace
+      font-size: 1.5rem
+      font-weight: 800
+    
+
+// eof  
+

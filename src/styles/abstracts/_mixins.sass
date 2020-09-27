@@ -1,0 +1,149 @@
+// File: src/styles/abstracts/_mixins.sass
+// Desc: OctoPlex Sass Framework Mixins
+// Date: 9/20/2019
+//..............................................................................
+
+// CSS Positioning Scheme 
+//......................................
+=n2k-position ($scheme, $top, $right, $bottom, $left)
+  position: $scheme
+  top: $top
+  right: $right
+  bottom: $bottom
+  left: $left
+  
+  
+// Title Style  
+//......................................
+=n2k-title-style($color, $background-color: #fff) 
+  margin: 0 0 20px 0
+  font-family: $family-sans-serif
+  font-size: 20px
+  font-weight: bold
+  text-transform: uppercase
+  color: $color
+  background: $background-color  
+
+
+// Rounded Border CSS Property  
+//......................................
+=n2k-rounded($radius) 
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  -o-border-radius: $radius
+  border-radius: $radius
+
+
+// Drop Shadow Normal            
+//......................................
+=n2k-shadow($x, $y, $blur, $color)  
+  -webkit-box-shadow: $x $y $blur $color
+  -moz-box-shadow: $x $y $blur $color
+  -ms-box-shadow: $x $y $blur $color
+  -o-box-shadow: $x $y $blur $color
+  box-shadow: $x $y $blur $color
+
+
+// Drop Shadow Inset
+//......................................
+=n2k-shadow-inset($x, $y, $blur, $color)  
+  -webkit-box-shadow: inset $x $y $blur $color
+  -moz-box-shadow: inset $x $y $blur $color
+  -ms-box-shadow: inset $x $y $blur $color
+  -o-box-shadow: inset $x $y $blur $color
+  box-shadow: inset $x $y $blur $color
+
+
+// Drop Shadow Inset
+//......................................
+=n2k-text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0, 0, 0, 0.4))
+  text-shadow: $x $y $blur $color
+
+
+// CSS3 transition
+//......................................
+=n2k-transition($property)  
+  -webkit-transition: $property .2s ease
+  -moz-transition: $property .2s ease
+  -ms-transition: $property .2s ease
+  -o-transition: $property .2s ease
+  transition: $property .2s ease
+
+
+// CSS Box Model box
+//......................................
+=n2k-box-sizing 
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  -o-box-sizing: border-box
+  box-sizing: border-box
+
+
+// Linear Gradient Preset
+//......................................
+=n2k-linear-gradient($from, $to)   
+  // Fallback for older browsers
+  background-color: $to
+  // Mozilla Firefox
+  background-image: -moz-linear-gradient($from, $to)
+  // WebKit Safari/Chrome 10+)
+  background-image: -webkit-linear-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to))
+  // WebKit (Chrome 11+)
+  background-image: -webkit-linear-gradient($from, $to)
+  // IE10
+  background-image: -ms-linear-gradient($from, $to)
+  // WebKit (Chrome 11+)
+  background-image: -webkit-linear-gradient($from, $to)
+  // Opera
+  background-image: -o-linear-gradient($from, $to)
+  // W3C
+  background-image: linear-gradient($from, $to)
+
+    
+// Radial Gradient Preset
+//......................................
+//=n2k-radial-gradient($from, $to)                      
+
+
+// Flexbox Module Prefixes
+//......................................
+=n2k-flex() 
+  display: -webkit-box
+  display: -moz-box
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex 
+  
+=n2k-flex($values)
+  -webkit-box-flex: $values
+  -moz-box-flex: $values
+  -webkit-flex: $values
+  -ms-flex: $values
+  flex: $values
+
+
+=n2k-order($integer)
+  -webkit-box-ordinal-group: $integer
+  -mox-box-ordinal-group: $integer
+  -ms-flex-order: $integer
+  -webkit-order: $integer
+  order: $integer
+  
+
+// Responsive Breakpoints
+// =responsive($width)
+  // @if $width == large-screens
+    // @media only screen and (max-width: $width-large)
+      // @content
+  // @else if $width == medium-screens
+    // @media only screen and (max-width: $width-medium)
+      // @content
+  // @else if $width == small-screens
+    // @media only screen and (max-width: $width-small)
+      // @content
+
+
+// eof
+                  

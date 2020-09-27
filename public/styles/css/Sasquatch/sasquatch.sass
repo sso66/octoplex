@@ -1,0 +1,114 @@
+// sasquatch.sass
+@import 'variables'
+@import 'mixins'
+  
+// Header Section    
+header[role="banner"]
+  margin: 20px 0 30px 0
+  border-bottom: 4px solid #333
+  
+  #logo
+    float: left
+    margin: 0 20px 0 0
+    
+    img
+      display: block
+      opacity: 0.95
+  
+  h1
+    padding: 15px 0
+    font:
+      size: 54px
+      family: Jubilat, Georgia, serif
+      weight: bold
+    line-height: 1     
+
+// Navigation Section
+header nav[role="navigation"]
+  ul
+    li
+      &.active a
+        padding: 3px 8px
+        color: #fff
+        +n2k-rounded(4px)
+        //background-color: #d42a78
+        +n2k-linear-gradient(#ff70b1, #d42a78)
+    
+// Main Section    
+section.main
+  //float: left
+  //width: 65%
+  font-size: 16px
+  line-height: 1.4
+
+  @media screen and (max-width: $n2k-width-large)
+    float: left
+    width: 65%
+
+  @media screen and (max-width: $n2k-width-medium)
+    float: none
+    width: auto
+  
+  @media screen and (max-width: $n2k-width-small)
+    font-size: 12px
+    line-height: 1.4
+    
+section.main h2
+  +n2k-title-style($n2k-color-dark, $n2k-color-light)
+  
+section.main h3
+  color: $n2k-color-light
+  
+section.main p
+  margin: 0, 0, 20px 0
+  font-size: 18px
+  line-height: 1.5
+  
+
+// Secondary Section    
+//section.secondary
+  
+section.secondary h2
+  +n2k-title-style($n2k-color-dark, $n2k-color-light)
+
+section.secondary h3 
+  color: $n2k-color-light
+  
+div.module
+  padding: 20px
+  background-color: #eee
+  border: 3px solid black
+  +n2k-rounded(10px)
+  +n2k-shadow-inset(5px, 5px, 4px, #999)
+
+ol.slats li a img
+  float: left
+  margin: 0 10px 0 0
+  padding: 4px
+  border: 1px solid #000
+  +n2k-rounded(3px)
+  +n2k-box-sizing
+ 
+%alert
+  background-color: $n2k-color-accent
+  padding: 15px
+  font-size: 1.2em
+  font-weight: normal
+  text-transform: uppercase
+  line-height: 1
+  letter-spacing: 3px
+  text-align: center
+  color: $n2k-color-light
+  +n2k-shadow(0, 1px, 2px, rgba(0,0,0,0.5))
+  +n2k-rounded(10px) 
+
+.important
+  font-size: 2em
+    
+.alert-positive
+  @extend %alert
+  @extend .important
+  background-color: #9c3
+
+    
+// eof

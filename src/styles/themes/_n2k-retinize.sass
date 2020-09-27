@@ -1,0 +1,44 @@
+// File: src/styles/themes/_n2k-retinize.sass
+// Desc: OctoPlex Framework SASS Mixins - HiDPI for "Retina" displays
+// Date: 10/2/2019
+//..............................................................................
+
+// Variable
+$is-hidpi: "(-webkit-min-device-pixel-ratio: 1.5),(min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2),(min-device-pixel-ratio: 1.5),(min-resolution: 1.5dppx)"
+
+// The file name
+// The type of image (JPG, GIF, PNG)
+// Image width on screen
+// Image height on screen
+
+// Mixin
+=retinize($file, $type, $width, $height)
+  // Normal resolution
+  background-image: url("../assets/images/" + $file + "." + $type)
+
+  // @media(-webkit-min-device-pixel-ratio: 1.5), 
+  // (min--moz-device-pixel-ratio: 1.5), 
+  // (-o-min-device-pixel-ratio: 3/2),
+  // (min-device-pixel-ratio: 1.5),
+  // (min-resolution: 1.5dppx) {
+  // special & parent selector which inserts whatever the "current selector" is
+  @media #{$is-hidpi}
+    &
+      // HiDPI resolution
+      background-image: url("../assets/images/" + $file + "-2x." + $type)
+      -webkit-background-size: $width $height
+      -moz-background-size: $width $height
+      background-size: $width $height
+
+// Selectors
+// li.dribbble a
+  // +retinize("icon-dribbble", "png", 24px, 24px)
+// 
+// li.flickr a
+  // +retinize("icon-flickr", "png", 24px, 24px)
+// 
+// li.facebook a
+  // +retinize("icon-facebook", "png", 24px, 24px)
+
+
+// eof

@@ -1,0 +1,108 @@
+<svg width="300" height="200" viewBox="0 0 300 200"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  
+  <filter id="sky-shadow" filterUnits="objectBoundingBox">
+	<feImage 
+		xlink:href="sky.jpg" result="sky"
+		x="0" y="0" width="100%" height="100%"
+		preserveAspectRatio="none"/>
+		<feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+		<feOffset in="blur" dx="4" dy="4" result="offsetBlur"/>
+		<feMerge>
+			<feMergeNode in="sky"/>
+			<feMergeNode in="offsetBlur"/>
+			<feMergeNode in="SourceGraphic"/>
+		</feMerge>
+	</filter>
+	
+  	<filter id="glow">
+		<feColorMatrix 
+			type="matrix"
+			values=
+			"0 0 0 0 0
+			0 0 0 0.9 0
+			0 0 0 0.9 0
+			0 0 0 1 0"/>
+
+		<feGaussianBlur 
+			stdDeviation="2.5"
+			result="coloredBlur"/>
+		<feMerge>
+			<feMergeNode in="coloredBlur"/>
+			<feMergeNode in="SourceGraphic"/>
+		</feMerge>
+	</filter>
+	
+	<defs>
+		<filter id="drop-shadow">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+		</filter>
+	</defs>
+	<!--
+	<defs>
+		<filter id="drop-shadow">
+			<feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur" />
+			<feOffset in="blur" dx="4" dy="4" result="offsetBlur"/>
+			<feMerge>
+				<feMergeNode in="offsetBlur" />
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+	</defs>
+-->
+	<title>DropShadow Flower SVG File</title>
+
+	<defs>
+		<g id="petal">
+	      <path d="M 10 0 Q 27 -15 40 0 27 15 10 0" />
+	    </g>
+	
+		<g id="flower">
+			<path  
+		    	d="M 50 50 Q 40 70, 70 100 T 70 150"
+				style="stroke: green; fill: none; stroke-width: 3;"/>
+				
+		    <path 
+		    	d="M 70 100 Q 80 70, 120 80, 90 75, 75 105"
+		      	style="stroke: none; fill: green;"/>
+		      	
+		    <circle 
+		    	cx="40" cy="50" r="10" 
+		    	style="fill: gray;"/>
+		    
+		    <g style="stroke: black; fill: yellow;">
+				<use xlink:href="#petal" transform="translate(40,50)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(40)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(80)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(120)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(160)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(200)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(240)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(280)"/>
+		      	<use xlink:href="#petal" transform="translate(40,50) rotate(320)"/>
+		    </g>
+		</g>
+	</defs>
+	<!-- show original image -->
+	<image 
+		xlink:href="sky.jpg" x="170" y="10"
+		width="122" height="104"/>
+	<use 
+		xlink:href="#flower" 
+		filter="url(#sky-shadow)" 
+		transform="translate(4,4)"/>
+
+	<use 
+		xlink:href="#flower" 
+		filter="url(#sky-shadow)"/> 
+
+	<use 
+		xlink:href="#flower" />
+	
+	<text x="85" y="45" stroke="darkgreen"
+		style="filter:url(#glow); fill:#003333; stroke:darkgreen font-size:58;">
+		Spring<tspan x="85" y="65">Flower</tspan>
+	</text>
+	
+</svg>

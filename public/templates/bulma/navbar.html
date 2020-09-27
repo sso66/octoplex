@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top" lang="ja">
+<head>
+    <title>Topic</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+    <nav id="navbarTop" class="navbar is-fixed-top has-shadow">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+                <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+            </a>
+            <div class="navbar-burger burger" data-target="navbarMenu" id="navbarBurger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+ 
+        <div id="navbarMenu" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item">
+                    Home
+                </a>
+                <a class="navbar-item">
+                    About
+                </a>
+                <a class="navbar-item">
+                    Login
+                </a>
+                <a class="navbar-item">
+                    Alerts
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.getElementById("navbarBurger").addEventListener("click", toggleNav);
+        var toggleFlag = true;
+        function toggleNav() {
+            var nav = document.getElementById("navbarMenu");
+            console.log(toggleFlag);
+            if (toggleFlag) {
+                nav.className = "nav-menu is-active";
+                nav.style.display = "";
+                toggleFlag = false;
+            } else {
+                nav.className = "nav-menu";
+                nav.style.display = "none";
+                toggleFlag = true;
+            }
+        }
+    </script>
+ 
+</body>
+</html>

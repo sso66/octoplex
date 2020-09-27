@@ -1,0 +1,54 @@
+// File: styles/themes/mobile-first-flex.sass 
+// Desc: Responsive Web Design Layout with Flexbox BFC
+// Date: 10/4/2019
+//..............................................................................
+
+.menubar, .sidebar, 
+  display: block
+  margin: 0
+  padding: n2k-rem-calc(3)
+  border: 1px solid #000
+  color: #fff
+
+
+.header
+  display:
+  background: #03a9f4
+    
+    
+// main content
+.content
+  display:
+  flex: 1
+  padding: 10px
+  background: #129a22
+
+
+// secondary content
+.sidebar
+  display:
+  flex: 0 1 300px
+  border: 1px solid #000000
+  padding: 10px
+  background: #673ab7
+  
+  
+// tertiary content
+.menubar
+  display:
+  background: #d22b1f
+           
+
+.flex-container
+  @media screen and (min-width: 680px) 
+    display: flex
+
+
+.wrapper
+  margin: auto
+  border: 1px solid white
+  max-width: n2k-rem-calc(1200)
+  background: #d22b1f
+
+                              
+  // eof

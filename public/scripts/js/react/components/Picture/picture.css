@@ -1,0 +1,57 @@
+/* picture-icon.css */
+/* HTML container */
+body {
+  background-color: lightblue;
+}
+
+.board {
+  background-color: orange;
+  border: 1px solid gray;
+}
+
+/* SVG container */
+.svg-icon path {
+  transition: 250ms;
+}
+.svg-icon:hover path {
+  fill: #292;
+  transform: scale(3);
+  /*transform: translate(200px, 100px);
+   *transform: scale(10);
+   *transform: rotate(50deg);
+   *transform: skew(15deg, 15deg); */
+}
+.svg-icon.picture:hover path {
+  fill: #49c;
+}
+
+@media screen and (min-width: 600px) {
+  .board {
+    background-color: green;
+  }
+
+  #phone {
+    stroke: silver;
+  }
+}
+@media screen and (min-width: 800px) {
+  .board {
+    background-color: yellow;
+  }
+
+  #phone {
+    stroke: tomato;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .board {
+    background-color: red;
+  }
+
+  #phone {
+    stroke: purple;
+  }
+}
+/* eof */
+
+/*# sourceMappingURL=picture.css.map */

@@ -1,0 +1,36 @@
+<html>
+<style>
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle {
+  stroke: #4CC790;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: none;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+</style>
+<body>
+<svg viewBox="0 0 36 36" class="circular-chart">
+  <line class="circle"
+    stroke-dasharray="100 100"
+    stroke-dashoffset="none"
+    x1="0"
+    x2="100"
+    y1="0"
+    y2="0"
+  />
+</svg>
+</body>
+</html>

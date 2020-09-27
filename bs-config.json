@@ -1,0 +1,16 @@
+{
+    "injectChanges": false,
+    "files": [ "./**/*.{ html, css, js, jsx, es6, ico }" ],
+    "watchOptions": {
+        "ignored": "node_modules"
+    },
+    "server": {
+        "baseDir": "./"
+    },
+    "host": "http://octoplex.carlingtech.com",
+    "browser": [ "chrome" ],
+    "port": 3000,
+    "ui": {
+        "port": 3001
+    }
+}

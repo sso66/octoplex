@@ -1,0 +1,54 @@
+<!-- speedometer.html -->
+<style>
+ #frame {
+    position: relative;
+    display: inline-block;
+    border: 1px solid blue;
+}
+#frame .speedometer {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    border: 20px solid #000;
+    border-right: 20px solid white;
+    border-bottom: 20px solid white;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#frame .needle {
+    position: absolute;
+    top: 10px;
+    left: 57px;
+    width: 5px;
+    height: 50px;
+    display: inline-block;
+    background: #999999;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    -webkit-animation:move 5s infinite;
+    transform-origin:bottom;
+    transform:rotate(0deg);
+    -webkit-transform: rotate(45deg);    
+}
+@-webkit-keyframes move {
+    0% {
+        transform:rotate(-90deg);
+    }
+    50% {
+        transform:rotate(90deg);
+    }
+    100% {
+        transform:rotate(-90deg);
+    }
+}   
+</style>
+
+<div id="frame"> 
+    <span class="speedometer"></span>
+    <span class="needle"></span>
+</div>
+
+<!-- eof -->

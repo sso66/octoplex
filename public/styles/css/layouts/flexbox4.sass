@@ -1,0 +1,56 @@
+/* layout4.css
+
+/* Flexbox Module Definitions
+
+.header
+  background: orange
+
+.footer
+  background: lightgreen
+
+.main
+  text-align: left
+  background: deepskyblue
+
+/* Custom styles
+
+.sidebar-1
+  background: gold
+
+.sidebar-2
+  background: hotpink
+
+/* Flexbox Module
+
+.wrapper
+  display: flex
+  flex-flow: row wrap
+  font-weight: bold
+  text-align: center
+
+  > *
+    padding: 10px
+    flex: 1 100%
+
+/* Media Queries
+@media all and (min-width: 600px)
+  .aside
+    flex: 1 auto
+
+@media all and (min-width: 800px)
+  .main
+    flex: 3 0px
+
+  .aside1
+    order: 1
+
+  .main
+    order: 2
+
+  .aside2
+    order: 3
+
+  .footer
+    order: 4
+
+/* eof

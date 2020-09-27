@@ -1,0 +1,239 @@
+/* tachometer.sass
+//@import url(https://fonts.googleapis.com/css?family=Open+Sans)
+
+.flex-container
+  display: flex
+  flex-direction: column
+  background-color: hsla(0,0%,0%,0)
+  margin: auto
+  border: 1px solid red
+  padding: 0
+  outline: none
+
+#tachometer
+  //display: block
+  position: relative
+  width: 600px
+  height: 600px
+  margin: 100px auto
+  background-color: #171717
+  border: 1px solid blue
+  border-radius: 100%
+  box-shadow: inset 0px 0px 9px 3px black
+  
+.tick
+  position: absolute
+  z-index: 2
+  width: 600px
+  height: 600px
+  border: 1px solid green
+
+  div
+    position: absolute
+    width: 600px
+    height: 600px
+    padding: 4px
+    box-sizing: border-box
+
+    b
+      display: block
+      position: absolute
+      left: 50%
+      width: 5px
+      height: 20px
+      margin: 0 -5px 0
+      background: #FFF
+
+    &:nth-child(2n+1) b
+      width: 10px
+      height: 35px
+      margin: 0 -5px 0
+
+    &:nth-child(1)
+      transform: rotate(240deg)
+
+    &:nth-child(2)
+      transform: rotate(255deg)
+
+    &:nth-child(3)
+      transform: rotate(270deg)
+
+    &:nth-child(4)
+      transform: rotate(285deg)
+
+    &:nth-child(5)
+      transform: rotate(300deg)
+
+    &:nth-child(6)
+      transform: rotate(315deg)
+
+    &:nth-child(7)
+      transform: rotate(330deg)
+
+    &:nth-child(8)
+      transform: rotate(345deg)
+
+    &:nth-child(9)
+      transform: rotate(0deg)
+
+    &:nth-child(10)
+      transform: rotate(15deg)
+
+    &:nth-child(11)
+      transform: rotate(30deg)
+
+    &:nth-child(12)
+      transform: rotate(45deg)
+
+    &:nth-child(13)
+      transform: rotate(60deg)
+
+    &:nth-child(14)
+      transform: rotate(75deg)
+
+    &:nth-child(15)
+      transform: rotate(90deg)
+
+    &:nth-child(16)
+      transform: rotate(105deg)
+
+    &:nth-child(17)
+      transform: rotate(120deg)
+
+[class^="num-"]
+  //display: block
+  position: absolute
+  width: 10px
+  color: #FFF
+  font-size: 40px
+  font-family: "Open Sans", sans-serif
+  text-align: center
+  text-transform: uppercase
+  text-decoration: none
+
+.num-1
+  transform: rotate(120deg)
+  top: 20px
+
+.num-2
+  transform: rotate(90deg)
+  top: 13px
+  left: 5px
+
+.num-3
+  transform: rotate(60deg)
+  top: 21px
+
+.num-4
+  transform: rotate(30deg)
+  top: 25px
+
+.num-5
+  transform: rotate(0deg)
+  top: 30px
+  left: -8px
+
+.num-6
+  transform: rotate(330deg)
+  top: 35px
+  left: -10px
+
+.num-7
+  transform: rotate(300deg)
+  top: 35px
+  left: -7px
+
+.num-8
+  transform: rotate(270deg)
+  top: 30px
+
+.num-9
+  transform: rotate(240deg)
+  top: 30px
+  left: 8px
+
+#redline
+  position: absolute
+  z-index: 1
+  top: 272px
+  right: 12px
+  width: 28px
+  height: 150px
+  border-width: 22px
+  border-radius: 50%
+  border-style: solid
+  border-color: #171717 #f14134 #171717 #171717
+  transform: rotate(15deg)
+
+.needle
+  position: absolute
+  top: 50%
+  left: 50%
+  z-index: 2
+  width: 0
+  height: 0
+  margin: -285px -8px 0
+  background-color: #f14134
+  background-image: linear-gradient(to bottom, #f14134, #343536)
+  border-radius: 50% 50% 0 0
+  padding: 285px 8px 0
+  transform-origin: 50% 100%
+  transform: rotate(-95deg)
+  animation: pendulum
+  animation-iteration-count: infinite
+  animation-duration: 20s
+
+.pin
+  position: absolute
+  z-index: 4
+  top: 50%
+  left: 50%
+  width: 50px
+  height: 50px
+  margin: -25px 0 0 -25px
+  background-color: #343536
+  background-image: linear-gradient(to bottom, #f14134, #343536)
+  border-radius: 50%
+  box-shadow: 0 8px 15px 0 rgba(0, 0, 0, 0.5)
+
+.inner
+  position: relative
+  width: 30px
+  height: 30px
+  margin: 10px auto 0
+  background-color: #343536
+  border-radius: 100%
+  box-shadow: inset 0 8px 15px 0 rgba(167, 23, 10, 0.4)
+
+@keyframes pendulum
+  10%
+    transform: rotate(100deg)
+
+  11%
+    transform: rotate(98deg)
+
+  12%
+    transform: rotate(96deg)
+
+  13%
+    transform: rotate(98deg)
+
+  14%
+    transform: rotate(96deg)
+
+  15%
+    transform: rotate(98deg)
+
+  16%
+    transform: rotate(96deg)
+
+  17%
+    transform: rotate(98deg)
+
+  18%
+    transform: rotate(96deg)
+
+  19%
+    transform: rotate(98deg)
+
+/* eof

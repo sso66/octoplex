@@ -1,0 +1,35 @@
+// File: src/styles/layout/grid.sass
+// Desc: SVG Drawing Board
+// Date: 12/06/2019
+//..............................................................................
+
+.grid
+  position: relative
+  width: 1024px
+  height: 768px
+  margin: 0 auto
+  background-image: url('../assets/images/grid.png');
+  padding-top: 100px
+  padding-left: 100px
+
+  &::before
+    position: absolute
+    top: 0
+    left: 100px
+    width: 1024px
+    height: 768px
+    border-left: 1px solid #7c7cea
+    content: ""
+
+  &::after
+    position: absolute
+    top: 100px
+    left: 0
+    width: 1024px
+    height: 768px
+    border-top: 1px solid #7c7cea
+    content: ""
+
+    
+// eof
+

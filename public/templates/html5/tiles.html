@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Custom Tile Layout</title>
+    <meta character='utf-8'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css' rel='stylesheet'>
+    <style>
+        .frame {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 2000px;
+            border: 1px solid #00f;
+        }
+
+        .tile {
+            flex-grow: 1;
+            min-width: 220px;
+            height: 220px;
+            margin: 0 15px 30px 15px;
+            border: 1px solid black;
+            padding: 0;
+        }
+
+        .red {
+            background-color: red;
+        }
+        
+        .green {
+            background-color: green;
+        }
+        
+        .yellow {
+            background-color: yellow;    
+        }
+        
+        @media screen and (max-width: 1140px) {
+            .container {
+                max-width: 850px;
+            }
+        }
+        @media screen and (max-width: 2040px) {
+            .container {
+                max-width: 1750px;
+            }
+        }
+        @media screen and (max-width: 1790px) {
+            .container {
+                max-width: 1500px;
+            }
+        }
+        @media screen and (max-width: 1540px) {
+            .container {
+                max-width: 1250px;
+            }
+        }
+        @media screen and (max-width: 1290px) {
+            .container {
+                max-width: 1000px;
+            }
+        }
+        @media screen and (max-width: 1040px) {
+            .container {
+                max-width: 750px;
+            }
+        }
+        @media screen and (max-width: 790px) {
+            .container {
+                max-width: 500px;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="section">
+            <div class="container">
+                <div class="frame">
+                    <div class="tile red"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile first"></div>
+                    <div class="tile green"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile"></div>
+                    <div class="tile yellow"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

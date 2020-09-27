@@ -1,0 +1,154 @@
+<!-- chris-coyier.html -->
+<!-- designing resuable svg patterns -->
+<!-- new way -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  
+  <symbol id="beaker" viewBox="214.7 0 182.6 792">
+    <circle cx="344.8" cy="20.2" r="20.2"/>
+    <circle cx="344.8" cy="92.9" r="20.2"/>
+    <circle cx="320.5" cy="169.7" r="24.2"/>
+    <circle cx="243" cy="141.4" r="24.2"/>
+    <circle cx="284.2" cy="56.6" r="36.4"/>
+    <path d="M397.3 768.5l-11.3-343.5v-178.5l9.7-20.2h-29.9l-4 13.7 2.4 189.9 9.7 316.8c1.6 14.5-19.4 12.9-34.8 12.9h-33.9s-38.8.8-46.1 0c-14.5-.8-18.6 1.6-17-29.1 1.6-25.2.8-95.5 5.7-301.5l-2.4-189.9-3.2-12.9h-27.5l9.7 20.2v178.6s-3.2 323.3-3.2 343.5c0 26.7 22.6 23.4 22.6 23.4h128.5c7.2 0 25 0 25-23.4zM259.9 473.5h93.8l-1.6-79.9h-92.2zM356.1 611.7l-2.4-132.6v5.7h-93.8l-.8 126.9zM352.1 382.3l-1.7-99.4h-89.7l-.8 99.4zM259.1 623l-.8 123.6h101l-2.4-123.6z"/>
+  </symbol>
+  
+  <symbol id="fish" viewBox="0 26 100 48">
+    <path d="M98.5,47.5C96.5,45.5,81,35,62,35c-2.1,0-4.2,0.1-6.2,0.3L39,26c0,4.5,1.3,9,2.4,12.1C31.7,40.7,23.3,44,16,44L0,34
+    c0,8,4,16,4,16s-4,8-4,16l16-10c7.3,0,15.7,3.3,25.4,5.9C40.3,65,39,69.5,39,74l16.8-9.3c2,0.2,4.1,0.3,6.2,0.3
+    c19,0,34.5-10.5,36.5-12.5S100.5,49.5,98.5,47.5z M85.5,50c-1.4,0-2.5-1.1-2.5-2.5s1.1-2.5,2.5-2.5s2.5,1.1,2.5,2.5
+    C88,48.9,86.9,50,85.5,50z"/>  
+  </symbol>
+  
+</svg>
+
+<svg class="icon"><use xlink:href="#beaker" /></svg>
+
+<svg class="icon"><use xlink:href="#fish" /></svg>
+
+<!-- old way -->
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+    <g class="icon">
+        <title>Layer 1</title>
+		
+		<!--
+        <g class="breaker">
+            <circle cx="155.28904" cy="106.86359" id="svg_1" r="4.67763"/>
+            <circle cx="155.28904" cy="124.96405" id="svg_2" r="4.67763"/>
+            <circle cx="146.02683" cy="144.0853" id="svg_3" r="5.60389"/>
+            <circle cx="116.48686" cy="137.03932" id="svg_4" r="5.60389"/>
+            <circle cx="132.19069" cy="115.92627" id="svg_5" r="8.429"/>
+        
+            <path d="m175.3,293.17133l-4.30712,-85.52279l0,-44.44198l3.69726,-5.02929l-11.39671,0l-1.52464,3.41095l0.91479,47.28029l3.69726,78.87517c0.60986,3.61013 -7.39452,3.21177 -13.2644,3.21177l-12.92136,0s-14.78905,0.19918 -17.57152,0c-5.52683,-0.19918 -7.08959,0.39836 -6.47974,-7.24516c0.60986,-6.27416 0.30493,-23.77708 2.17262,-75.06586l-0.91479,-47.28029l-1.21972,-3.21177l-10.48193,0l3.69726,5.02929l0,44.46687s-1.21972,80.49351 -1.21972,85.52279c0,6.64762 8.61424,5.82601 8.61424,5.82601l48.97919,0c2.74436,0 9.52902,0 9.52902,-5.82601zm-52.37152,-73.44752l35.7529,0l-0.60986,-19.89308l-35.14304,0l0,19.89308zm36.66769,34.4083l-0.91479,-33.01404l0,1.41916l-35.7529,0l-0.30493,31.59488l36.97261,0zm-1.52464,-57.11479l-0.64797,-24.74808l-34.19014,0l-0.30493,24.74808l35.14304,0zm-35.44797,59.9282l-0.30493,30.77327l38.49726,0l-0.91479,-30.77327l-37.27754,0z" id="svg_6"/>
+        </g>
+  
+        <g class="fish">
+            <path d="m98.5,123.5c-2,-2 -17.5,-12.5 -36.5,-12.5c-2.1,0 -4.2,0.1 -6.2,0.3l-16.8,-9.3c0,4.5 1.3,9 2.4,12.1c-9.7,2.6 -18.1,5.9 -25.4,5.9l-16,-10c0,8 4,16 4,16s-4,8 -4,16l16,-10c7.3,0 15.7,3.3 25.4,5.9c-1.1,3.1 -2.4,7.6 -2.4,12.1l16.8,-9.3c2,0.2 4.1,0.3 6.2,0.3c19,0 34.5,-10.5 36.5,-12.5s2,-3 0,-5zm-13,2.5c-1.4,0 -2.5,-1.1 -2.5,-2.5s1.1,-2.5 2.5,-2.5s2.5,1.1 2.5,2.5c0,1.4 -1.1,2.5 -2.5,2.5z" id="svg_7"/>
+        </g>
+		
+		
+        <g id="n2k-text" fill="white" stroke="DarkGray" stroke-width="2">
+            <text x="50" y="25">N2K Text Component: Navigation Lights - Group</text>
+        </g>
+        -->
+        
+		<svg width="0" height="0" class="visually-hidden">
+		    <symbol id="n2k-text" viewBox="0 0 200 100">
+		        <title>N2K Text ComponenG</title>
+		        <text x="5" y="25">N2K Text Component: Navigation Lights - Symbol</text>
+		    </symbol>
+		</svg>
+
+	    <svg class="n2k-shape n2k-text">
+	        <use xlink:href="#n2k-text"/>
+	    </svg>
+
+		<!--
+        <line class="straight-line" x2="300" y2="100" stroke="darkorange" stroke-width="3" />
+        <rect class="rectangle" x="250" y="250" width="300" height="170" stroke="seagreen" stroke-width="10" />
+        <circle class="circular" cx="50" cy="50" r="100" stroke="seagreen" stroke-width="10" />   
+        <ellipse class="circular" cx="350" cy="65" rx="70" ry="35" stroke="seagreen" stroke-width="10" />  
+		-->
+		 
+        <polyline 
+            points="200,60 240,230 310,230 350,60"
+            fill="lightcyan"
+            fill-opacity="0.7"
+            stroke-width="25"
+            stroke="darkviolet"
+            stroke-linecap="round"
+            stroke-opacity="0.2"
+            
+        />
+        
+        <polygon 
+            points="100,50 115,120 150,150 115,180 100,250 85,180 50,150 85,120"
+            fill="darkorange"
+            fill-opacity="0.7"
+            stroke="papayawhip"
+            stroke-width="20"
+            stroke-opacity="0.7"
+            stroke-linejoin="miter"
+        /> 
+ </g>
+ 
+<!--
+//result: SVGR : The SVG to JSX transformer 
+import React from 'react'
+
+const SvgComponent = props => (
+  <svg width={640} height={480} {...props}>
+    <g className="prefix__icon">
+      <title>{'Layer 1'}</title>
+      <g className="prefix__icon">
+        <circle cx={155.289} cy={106.864} r={4.678} />
+        <circle cx={155.289} cy={124.964} r={4.678} />
+        <circle cx={146.027} cy={144.085} r={5.604} />
+        <circle cx={116.487} cy={137.039} r={5.604} />
+        <circle cx={132.191} cy={115.926} r={8.429} />
+        <path d="M175.3 293.171l-4.307-85.522v-44.442l3.697-5.03h-11.397l-1.524 3.411.915 47.28 3.697 78.876c.61 3.61-7.395 3.211-13.265 3.211h-12.92s-14.79.2-17.572 0c-5.527-.199-7.09.399-6.48-7.245.61-6.274.305-23.777 2.172-75.066l-.914-47.28-1.22-3.212H105.7l3.697 5.03v44.467s-1.22 80.493-1.22 85.522c0 6.648 8.615 5.826 8.615 5.826h48.979c2.744 0 9.529 0 9.529-5.826zm-52.372-73.447h35.753l-.61-19.893h-35.143v19.893zm36.668 34.408l-.915-33.014v1.42h-35.753l-.304 31.594h36.972zm-1.524-57.115l-.648-24.748h-34.19l-.306 24.748h35.144zm-35.448 59.929l-.305 30.773h38.497l-.915-30.773h-37.277z" />
+      </g>
+      <path d="M98.5 123.5c-2-2-17.5-12.5-36.5-12.5-2.1 0-4.2.1-6.2.3L39 102c0 4.5 1.3 9 2.4 12.1-9.7 2.6-18.1 5.9-25.4 5.9L0 110c0 8 4 16 4 16s-4 8-4 16l16-10c7.3 0 15.7 3.3 25.4 5.9-1.1 3.1-2.4 7.6-2.4 12.1l16.8-9.3c2 .2 4.1.3 6.2.3 19 0 34.5-10.5 36.5-12.5s2-3 0-5zm-13 2.5c-1.4 0-2.5-1.1-2.5-2.5s1.1-2.5 2.5-2.5 2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z" />
+    </g>
+  </svg>
+)
+
+export default SvgComponent
+--> 
+
+<style>
+body {
+  padding: 20px;
+}
+
+.icon {
+    width: 125px;
+    height: 125px;
+    background-color: #ffd;
+    border: 3px double black;
+  /*
+  fill: red;
+  stroke: green;
+  stroke-width: 5;
+  */
+}
+
+svg {
+    background-color: hsla(14, 0%, 96%, 0.9);
+}
+
+#n2k-text {
+    font-size: 0.8rem;
+    stroke: "orange";
+    stroke-width: 2;
+}
+
+.n2k-shape {
+	/* make it match the font-size */
+	width: 1rem;
+    height: 1rem;
+        
+	/* make it match the text color */
+	fill: "darkorange";
+}
+</style>

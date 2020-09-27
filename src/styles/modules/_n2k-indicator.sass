@@ -1,0 +1,124 @@
+// File: src/styles/modules/_button.sass
+// Desc: Styles for N2KIndicator components
+// Date: 10/4/2019
+//..............................................................................
+
+// variables "scope"
+$n2k-width-small: 767px
+$n2k-width-medium: 1023px
+$n2k-width-large: 1215px
+
+$n2k-color-status-inactive:  #666
+$n2k-color-status-active-off: #000
+$n2k-color-status-active-on: #0f0
+$n2k-color-status-active-alert: #f00
+
+// mixins "function"
+=responsive($width)
+  @if $width == large-screens
+    @media all and (max-width: $n2k-width-large) 
+      @content
+  @else if $width == medium-screens
+    @media all and (max-width: $n2k-width-medium)
+      @content
+  @else if $width == small-screens
+    @media all and (max-width: $n2k-width-small)
+      @content
+
+    //@media screen and (max-width: $n2k-width-small)
+        //@content
+        
+    //@media not screen and (max-width: $n2k-width-small)
+        //@content
+    //@media only screen and (max-width: $n2k-width-small)
+        //@content
+
+    //@media screen and (min-width: $n2k-width-small + 1) and (max-width: $n2k-width-medium)
+        //@content
+
+    //@media only screen and (min-width: $n2k-width-small + 1) and (orientation: portriat)
+        //@content
+
+
+// placeholder "context"
+%n2k-indicator
+  display: inline-block
+  margin:
+    top: 0
+    right: 0
+    botttom: 0
+    right: 0
+  background:
+    color: transparent  
+    image: none
+  border: 
+    width: 1px 
+    type: solid 
+    color: gray
+  padding: 
+    top: 0 
+    right: 0
+    bottom: 0
+    left: 0
+  content: ''
+  outline: none
+  
+
+// selector "context"
+.n2k-indicator
+  @extend %n2k-indicator
+  margin: 1px
+  background: $n2k-color-status-inactive
+  border: 3px double #333
+  padding: 1px 0px
+  color: #fff
+  font-size: 0.8em
+  line-height: 2
+  text-align: center
+  +n2k-rounded(5px)
+  filter: dropshadow(color=#1f84ef, offx=1, off=0)
+  -webkit-font-smoothing: antialised
+  cursor: pointer
+  -webkit-transition: all 0.5s
+  -moz-transition: all 0.5s
+  transition: all 0.5s
+
+  &:hover, &:active, &:focus
+    background: rgba(255,255,0,0.8) 
+  
+  
+  // +responsive(large-screens)
+    // padding: 15px 10px
+//      
+  // +responsive(medium-screens)
+    // +n2k-linear-gradient(lightgreen, darkgreen)
+    // padding: 10px 15px
+    // line-height: 2
+//     
+  // +responsive(small-screens)
+    // +n2k-linear-gradient(red, darkred)
+    // padding: 3px 3px
+    // font-size: 0.6em
+  
+
+.n2k-indicator-4x1
+  @extend .n2k-indicator
+  
+
+.n2k-indicator-2x1
+  @extend .n2k-indicator
+
+
+.n2k-indicator-1x1
+  @extend .n2k-indicator
+  
+  
+.n2k-indicator-bean
+  @extend .n2k-indicator
+  
+  
+.n2k-indicator-led
+  @extend .n2k-indicator
+
+  
+// eof

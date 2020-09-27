@@ -1,0 +1,23 @@
+<html>
+<svg width="800px" height="600px">
+<defs>
+  <filter id="inner-glow">
+    <feFlood flood-color="lime"/>
+    <feComposite in2="SourceAlpha" operator="out"/>
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feComposite operator="atop" in2="SourceGraphic"/>
+</filter> 
+  </defs>
+       	<rect 
+            	x="1%" 
+            	y="7.25%" 
+            	width="45%" 
+            	height="12%" 
+            	fill="black" 
+            	
+        	/>
+
+  <text fill="lime" stroke="lime" filter="url(#inner-glow)" x="30" y="100" font-size="62" font-family="Sans-Serif" font-weight="normal">SVG Filters</text>
+  
+</svg>
+</html>

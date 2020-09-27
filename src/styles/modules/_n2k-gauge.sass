@@ -1,0 +1,166 @@
+// File: src/styles/modules/n2k-gauge.sass
+// Desc: Common Sass for N2KView Available Components
+// Date: 12/06/2019
+//..............................................................................
+
+// variables "scope"
+$n2k-width-small: 767px
+$n2k-width-medium: 1023px
+$n2k-width-large: 1215px
+
+$n2k-color-primary:  gray 
+$n2k-color-secondary: black 
+
+// mixins "function"
+=responsive($width)
+  @if $width == large-screens
+    @media all and (max-width: $n2k-width-large) 
+      @content
+  @else if $width == medium-screens
+    @media all and (max-width: $n2k-width-medium)
+      @content
+  @else if $width == small-screens
+    @media all and (max-width: $n2k-width-small)
+      @content
+
+    //@media screen and (max-width: $n2k-width-small)
+        //@content
+        
+    //@media not screen and (max-width: $n2k-width-small)
+        //@content
+    //@media only screen and (max-width: $n2k-width-small)
+        //@content
+
+    //@media screen and (min-width: $n2k-width-small + 1) and (max-width: $n2k-width-medium)
+        //@content
+
+    //@media only screen and (min-width: $n2k-width-small + 1) and (orientation: portriat)
+        //@content
+
+
+// placeholder "context"
+%n2k-gauge
+  // applied css box model
+  display: 
+  margin:
+    top: 0
+    right: 0
+    botttom: 0
+    right: 0
+  background:
+    //color: #000  
+    image: none
+  border: 
+    width: 1px 
+    type: solid 
+    color: #FFF
+  padding: 
+    top: 0 
+    right: 0
+    bottom: 0
+    left: 0
+  content: ''
+  outline: none
+  
+  
+// selector "context"
+.n2k-gauge
+  @extend %n2k-gauge 
+  //background: url("../assets/images/download.gif"), linear-gradient(white, skyblue, orange)
+  //background: url("../assets/images/catching-up.gif"), linear-gradient(white, skyblue, orange)
+  //background: url("../assets/images/blue-moon.jpg"), linear-gradient(white, skyblue, orange)
+  //background: url("../assets/images/spinning-wheels.jpg"), linear-gradient(white, skyblue, orange)
+  //background-repeat: no-repeat, repeat
+  cursor: pointer
+  
+// svg styles   
+.bounding-box
+  stroke: rgba(255,255,255, 0.5)
+  stroke-width: 0.1
+  fill: rgba(0,255,255, 1)
+  
+  &.gauge
+    fill: #000
+    
+  &.button
+    fill: #FFF
+    //fill: url(#linearGradient)
+    //fill: url(#radialGradient)
+  
+    
+.title, .value, .units
+  fill: #FFF
+  font-family: Montserrat, Arial, sans-serif
+  //font-family: Brush Script MT, Brush Script, Segoe Script, cursive
+  font-weight: bolder
+
+
+.value
+  font-size: 0.25em
+      
+           
+.units
+  font-size: 0.8em    
+        
+        
+.dial-frame
+  stroke: skyblue
+  stroke-width: 1
+  stroke-opacity: 1
+  fill: #FFF
+  fill-opacity: 0.1
+  
+
+.dial-surface  
+  stroke: #00F
+  stroke-width: 0.5
+  stroke-opacity: 0.75
+  fill: none
+
+ 
+.needle-base
+  stroke: silver
+  stroke-width: 0.7
+  fill: #F00
+  
+
+.needle
+  stroke: silver
+  stroke-width: 0.5
+
+
+.led-indicator
+  stroke: silver
+  stroke-width: 0.5
+
+    
+.ticks
+  stroke: #FFF
+  
+  &.major-tick
+    stroke-width: 0.3
+    font-weight: bolder
+
+  &.minor-tick
+    stroke-width: 0.15
+
+
+.major-tick-text
+  fill: #FFF
+  font-size: 0.12rem
+  font-weight: 600
+  text-Anchor: middle
+  
+
+.min-max-markers
+  stroke: #FFF
+  stroke-width: 0.3
+  
+  &.min-mark
+    fill: #00F
+  
+  &.max-mark
+    fill: #F00
+    
+
+// eof

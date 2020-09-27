@@ -1,0 +1,62 @@
+/* picture-icon.css */
+
+/* HTML container */
+body {
+    background-color: lightblue;
+}
+
+.board {
+    background-color: orange ;
+    border: 1px solid gray;
+}
+/* SVG container */        
+.svg-icon path {
+    transition: 250ms;
+}
+.svg-icon:hover path {
+    fill: #292;
+    transform: scale(3);
+    /* 
+    transform: translate(200px, 100px);
+    transform: scale(10);
+    transform: rotate(50deg);
+    transform: skew(15deg, 15deg);
+    */
+}
+.svg-icon.picture:hover path {
+    fill: #49c;
+}  
+
+#phone {
+    display: none;
+    stroke:blue;
+    stroke-width: 2;
+    fill: white;
+}
+@media screen and (min-width: 600px) {
+    body {
+        background-color: green;
+    }
+    #phone {
+          fill: tomato;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: yellow;
+    }
+    #phone {
+        fill: lightgreen;
+    }
+}
+@media screen and (min-width: 1000px) {
+    body {
+        background-color: red;
+    }
+    #phone {
+        fill: aqua;
+    }
+}          
+
+/* eof */

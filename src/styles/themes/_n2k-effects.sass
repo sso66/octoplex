@@ -1,0 +1,75 @@
+// File: src/styles/themes/_n2k-effects.sass
+// Desc: Assorted user interface effects
+// Date: 9/20/2019
+//...............................................................................   
+
+.glow
+  //font-size: 2.5em
+  text-shadow: 0 0 5px white, 0 0 10px black, 0 0 20px black, 0 0 30px black, 0 0 40px white, 0 0 55px white, 0 0 75px white
+  text-align: center
+  padding: 3px
+  text-align: center
+  -webkit-animation: glow 1s ease-in-out infinite alternate
+  -moz-animation: glow 1s ease-in-out infinite alternate
+  animation: glow 1s ease-in-out infinite alternate
+  
+@-webkit-keyframes glow 
+  from 
+    text-shadow:  0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073
+  
+  to 
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6
+ 
+ 
+.drop-shadow
+  box-shadow: inset 60px 0 120px #f0f, inset -60px 0 120px #0ff  
+
+
+.luminaire
+  display: inline-block
+  position: relative
+  width: 20px
+  height: 20px
+  margin: 50px
+  border-radius: 50%
+  background-color: #FFF
+  box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px #0ff
+  transition: box-shadow 4s ease-out
+  animation: spin 16s linear infinite
+
+  &:hover
+    cursor: pointer
+
+  &::before, &::after
+    content: ''
+    display: block
+    position: absolute
+    top: calc(50% - 10px)
+    left: calc(50% - 10px)
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    background-color: #fff
+    box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px #ff0
+    opacity: 0
+    transition: opacity 8s, transform 8s
+
+
+@keyframes spin
+  100%
+    transform: rotate(360deg)
+
+.on
+  background-color: #fff
+  box-shadow: 0 0 80px 40px #fff, 0 0 200px 100px #f0f
+
+  &::before
+    transform: translateX(-100px)
+    opacity: 1
+
+  &::after
+    transform: translateX(100px)
+    opacity: 1
+    
+    
+// eof

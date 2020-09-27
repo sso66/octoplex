@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+*::after, *::before {
+  box-sizing: border-box;
+}
+
+/*  The main reason that :root is suggested is because CSS isn't only used to 
+ *  style HTML documents. It is also used for XML and SVG files.
+ *
+ *  In the case of XML and SVG files, :root isn't only selecting the html element, 
+ *  but rather their root (such as the svg tag in an SVG file).
+ *  
+ *  Variables in CSS should be declared within a CSS selector that defines its 
+ *  scope.
+ *
+ *  For a global scope you can use either the :root or the body selector.
+ *  The variable name must begin with two dashes (--) and is case sensitive! */
+:root {
+  --rotation: 0deg;
+}
+
+.container {
+  position: relative;
+  top: 50%;
+  left: 7%;
+  width: 16rem;
+  height: 8rem;
+  font-family: Arial;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  background: transparent;
+  border: 30px solid #D7ECA6;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  transform: rotate(var(--rotation));
+}
+.loader::before {
+  position: absolute;
+  top: -30px;
+  z-index: 2;
+  left: -30px;
+  width: 16rem;
+  height: 16rem;
+  border: 30px solid #8CC800;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 50%;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.loader__title {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  color: #8CC800;
+  font-size: 5rem;
+  transform: translateX(-50%);
+}
+
+/*# sourceMappingURL=gauge.css.map */

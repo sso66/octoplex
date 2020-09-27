@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none">
+ <title>Layer 1</title>
+ <defs>
+  <!-- Begin Example -->
+  <pattern height="100" id="gridPatternWithTessellation" patternUnits="userSpaceOnUse" width="100" x="20" y="20">
+   <!-- Draw the lines. -->
+   <line id="patternLine1" stroke="black" stroke-dasharray="1, 6" stroke-dashoffset="0" stroke-linecap="round" stroke-miterlimit="4" stroke-opacity="0.4" x1="90" x2="10" y1="10" y2="90"/>
+   <!-- Reuse the first line, rotate it 90 degrees, and update the style attributes. -->
+   <!-- For appendix or wiki - note that currently most browsers do not support styling of Use elements using either CSS or SVG attributes -->
+   <use id="patternLine2" transform="rotate(90, 50, 50)" xlink:href="#patternLine1"/>
+   <!-- Draw the upper-right rectangle. -->
+   <rect fill="#ada1d9" fill-rule="nonzero" height="20" id="patternRect-upperRight" stroke="#32287d" stroke-linejoin="bevel" stroke-miterlimit="4" stroke-opacity="0.4" stroke-width="10" width="20" x="90" y="-10"/>
+   <!-- Reuse the first rectangle element and rotate it 90 degrees each time. -->
+   <use id="patternRect-lowerRight" transform="rotate(90, 50, 50)" xlink:href="#patternRect-upperRight"/>
+   <use id="patternRect-lowerLeft" transform="rotate(180, 50, 50)" xlink:href="#patternRect-upperRight"/>
+   <use id="patternRect-upperLeft" transform="rotate(270, 50, 50)" xlink:href="#patternRect-upperRight"/>
+   <!-- Group containing the eye. -->
+   <g id="eye">
+    <!-- Draw the ellipse. -->
+    <ellipse cx="50" cy="50" fill="#a1d9ad" fill-opacity="0.7" fill-rule="nonzero" id="svg_1" rx="22" ry="14" stroke="#32287d" stroke-opacity="0.5"/>
+    <!-- Group containing the eye's iris. -->
+    <g id="iris"/>
+    <circle cx="50" cy="50" id="path3389"/>
+    <!-- Draw the circle. -->
+    <circle cx="50" cy="50" fill="black" fill-rule="nonzero" id="path3395" r="10" stroke="#32287d" stroke-linejoin="bevel" stroke-miterlimit="4"/>
+    <!-- Reference the bitmap image (PNG) -->
+    <!--<image height="5.5%" id="bitmapCentralBall" width="5.5%" x="39px" xlink:href="iris-small.png" y="42px"/>-->
+   </g>
+   <!-- Draw the path using "relative" coordinates via lowercase path commands. Note that we can easily switch to using the Polyline element by changing the "d" attribute to "points". -->
+   <path d="m0,50s10,0 0,20c20,-50 0,-70 0,-70" fill="none" id="patternPath-lowerLeft" stroke="black" stroke-width="1px"/>
+   <!-- Other interesting paths 
+MoveTo Polyline-like d="m 0,50 10,0 0,20 20,20 0,0 0,0 20,0 0,10"
+Quadratic d="M 0,50 Q 10,0 0,20 S 20,20 0,0"
+Smooth Quadratic d="M 0,50 S 10,0 0,20 Q 20,20 0,0"
+Cubic d="M 0,50 C 10,0 0,20 20,20 S 0,0 0,0"
+Smooth Quadratic & Cubic d="M 0,50 s 10,0 0,20 C 20,20 0,0 0,0" 
+-->
+   <!-- Reuse the first path, rotate it 90 more degrees for each of the four corners. -->
+   <use id="patternPath-upperLeft" transform="rotate(90, 50, 50)" xlink:href="#patternPath-lowerLeft"/>
+   <use id="patternPath-upperRight" transform="rotate(180, 50, 50)" xlink:href="#patternPath-lowerLeft"/>
+   <use id="patternPath-lowerRight" transform="rotate(270, 50, 50)" xlink:href="#patternPath-lowerLeft"/>
+  </pattern>
+  <pattern height="10" id="gridPattern" patternUnits="userSpaceOnUse" width="10">
+   <path d="m10,0l-10,0l0,10" fill="none" id="svg_2" stroke="gray" stroke-width="0.25"/>
+  </pattern>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="layer1">
+   <!-- background grid -->
+   <rect fill="url(#gridPattern)" height="100%" id="grid" stroke="gray" stroke-width="0.25" width="100%" x="0" y="0"/>
+   <!-- grid illustrations -->
+   <use id="svg_3" xlink:href="#coords"/>
+   <text font-size="8" id="svg_4" x="3" y="9">(0,0)</text>
+   <!-- Begin Example -->
+   <rect fill="url(#gridPatternWithTessellation)" height="300" id="gridWithTessellation" width="300" x="20" y="20"/>
+  </g>
+  <rect fill="url(#gridPatternWithTessellation)" height="300" id="gridWithTessellation" width="300" x="20" y="20"/>
+ </g>
+</svg>

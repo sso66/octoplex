@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer" display="inline">
+  <title>head</title>
+  <circle cx="25" cy="25" fill="red" id="svg_8" r="25" stroke="black"/>
+  <rect fill="none" height="80" id="svg_9" stroke="blue" width="30" x="100" y="5"/>
+  <g id="svg_10">
+   <svg height="80" id="svg_4" preserveAspectRatio="xMaxYMax meet" viewBox="0 0 50 50" width="30" x="100px" y="5px">
+    <circle cx="25" cy="25" fill="red" id="svg_5" r="25" stroke="black"/>
+   </svg>
+  </g>
+ </g>
+ <g class="layer" display="inline">
+  <title>body</title>
+  <circle cx="25" cy="25" fill="yellow" id="svg_2" r="25" stroke="black"/>
+  <rect fill="none" height="80" id="svg_1" stroke="blue" width="30" x="100" y="5"/>
+  <g id="svg_3">
+   <svg height="80" id="svg_6" preserveAspectRatio="xMidYMid meet" viewBox="0 0 50 50" width="30" x="100px" y="5px">
+    <circle cx="25" cy="25" fill="yellow" id="svg_7" r="25" stroke="black"/>
+   </svg>
+  </g>
+ </g>
+ <g class="layer" display="inline">
+  <title>foot</title>
+  <circle cx="25" cy="25" fill="green" id="svg_13" r="25" stroke="black"/>
+  <rect fill="none" height="80" id="svg_14" stroke="blue" width="30" x="100" y="5"/>
+  <g id="svg_15">
+   <svg height="80" id="svg_11" preserveAspectRatio="xMinYMin meet" viewBox="0 0 50 50" width="30" x="100px" y="5px">
+    <circle cx="25" cy="25" fill="green" id="svg_12" r="25" stroke="black"/>
+   </svg>
+  </g>
+ </g>
+</svg>

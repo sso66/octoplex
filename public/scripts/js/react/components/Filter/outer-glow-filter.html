@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>N2K Prototype</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+        <h1>N2K Prototype</h1>
+        <p>Page reserved for branding OctoPlex products</p>
+        <hr />
+        
+        <svg 
+        	xmlns="http://www.w3.org/2000/svg"
+        	xmlns:svg="http://www.w3.org/2000/svg" 
+        	height="400"
+        	weight="400"
+        	viewBox="0 0 220 200"
+		>
+        	<defs>
+				<filter id="softGlow" height="300%" width="300%" x="-75%" y="-75%">
+	            	<!-- Thicken out the original shape -->
+	            	<feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+	
+			        <!-- Use a gaussian blur to create the soft blurriness of the glow -->
+	        		<feGaussianBlur in="thicken" stdDeviation="10" result="blurred" />
+	    
+	            	<!-- Change the colour -->
+	            	<feFlood flood-color="rgba(56,255,0,0.5)" result="glowColor" />
+	    
+			        <!-- Color in the glows -->
+	            	<feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+	    
+	            	<!-- Layer the effects together -->
+	            	<feMerge>
+	                	<feMergeNode in="softGlow_colored" />
+	                	<feMergeNode in="SourceGraphic" />
+	            	</feMerge>
+    		 	</filter>
+    		</defs>
+          	<rect 
+            	x="5%" 
+            	y="7.25%" 
+            	width="50%" 
+            	height="25%" 
+            	fill="black" 
+            	filter="url(#softGlow)" 
+        	/>
+        	<text 
+        	   x="10%" 
+        	   y="20%" 
+        	   stroke=""    
+        	   fill="white"
+        	   font-family="sans-serif"
+        	   font-size="12"
+        	   
+            >
+        	   N2K Glow Filter
+            </text>
+    	</svg>
+	</body>
+</html>
+

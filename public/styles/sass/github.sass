@@ -1,0 +1,117 @@
+/* src/styles/modules/github.sass
+//.................................................................
+// An alogrithm is a set of instructions that specify exactly how
+// to solve a particular problem in a finite number of steps.
+//.................................................................
+
+.content
+    position: relative
+    height: 100%
+    overflow: hidden
+    background: #fff
+
+    .item
+        display: block
+        position: relative
+        z-index: 2
+        margin: 20px 30px 30px 70px
+    
+        &:hover
+            color: #5f98cd
+            cursor: pointer
+
+    .line
+        position: absolute
+        top: 0
+        left: 40px
+        bottom: 0
+        width: 2px
+        background: #e3e3e3
+
+    
+    .avatar
+        display: inline-block
+        position: absolute
+        left: -49px
+        width: 40px
+        height: 240px
+        vertical-align: top
+        overflow: hidden
+
+    img
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        border-radius: 50%
+
+    .time
+      display: block
+      margin-bottom: 2px
+      font-size: 12px
+      line-height: 11px
+
+    p
+        margin: 0px 40px 0px 0px
+        line-height: 20px
+        font-size: 14px
+        font-family: 'Open Sans', Lora, Times, no-serif
+
+        b
+            font-weight: 800
+
+        .repo
+            position: absolute
+            top: 11px
+            right: 5px
+            font-size: 11px
+
+    .circle
+        display: none
+        position: absolute
+        top: -5px
+        left: 260px
+        width: 70px
+        height: 70px
+        box-sizing: border-box
+        box-shadow: 0 0 0 3px #0f0
+        background: hsla(0,0%,0%,1)
+        border: 2px solid #5f98cd
+        border-radius: 35px
+        
+        p
+            position: absolute
+            top: 25px
+            left: 3px
+            color: #fff
+            font-family: monospace
+            font-size: 0.7em
+            font-weight: 600
+            text-align: center
+
+    .commentCount
+        position: absolute
+        top: 11px
+        right: 15px
+        font-size: 11px
+
+        &:after
+            position: absolute
+            top: -50%
+            left: 100%
+            z-index: 3
+            margin-left: 10px
+            content: "\f075"
+            color: #ebebeb
+            font-family: FontAwesome
+            font-size: 20px
+
+        &:hover:after
+            color: #f0f
+
+        &:hover
+            color: orange
+            cursor: pointer
+                     
+/* eof
+

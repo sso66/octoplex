@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- public/svg/html/coordinates.html -->
+<html class='no-js' lang=''>
+
+<head>
+    <meta character='utf-8'>
+    <meta content='ie-edge' http_equiv='x-ua-compatible'>
+    <title>Carling Technologies Octoplex Dashboard</title>
+    <meta content='' name='description'>
+    <meta content='width=device-width, initial-scale=1, shrink-to-fit=no' name='viewport'>
+    <link href='index.css' rel='stylesheet'>
+    <!-- %link{rel:'icon', type:'image/png',  href:'../images/favicon.ico'} -->
+    <style>
+        svg {
+            display: block;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border: thick double navy;
+            background-color: lightblue;
+            font-size: 0.6em;
+        }
+        body {
+            font-family: cursive;
+        }
+        div.ancestor {
+            background-color: teal;
+        }
+        circle {
+            fill: lavender;
+            stroke: navy;
+            stoke-width: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class='ancestor'>
+        <h2>Inline SVG in HTML Page</h2>
+        <svg 
+             width="200" height="200" 
+             viewBox="0 0 200 200" 
+             xmlns="http://www.w3.org/2000/svg" 
+             xmlns:svg="http://www.w3.org/2000/svg">
+            
+            <text x="60" y="100">Simple SVG Text</text>
+            <circle cx="25" cy="25" r="25" style="stroke: black; fill: none;" />
+            <rect x="100" y="5" width="30" height="80" style="stroke: blue; fill: none;" />
+
+            <svg 
+                 x="100" y="5" 
+                 width="30" height="80" 
+                 viewBox="0 0 50 50" 
+                 preserveAspectRatio="xMinYMax meet">
+            
+                <text x="1" y="28">Simple SVG Text</text>     
+                <circle cx="25" cy="25" r="25" style="stroke: black; fill: none;" />
+            </svg>
+        </svg>
+    </div>
+</body>
+
+</html>
+<!-- eof -->

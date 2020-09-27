@@ -1,0 +1,38 @@
+/* File: server/wireframe.css 
+ * Desc: basic styles for server-side application 
+ * Date: 2/25/2020 */
+
+html { 
+  box-sizing: border-box; 
+  border: 3px double blue; 
+}
+
+body { 
+	background-color: orange !important; 
+    margin: 0;
+    color: #fff;
+}
+
+#root { 
+    background-color: rgba(0, 0, 255, 0.65);
+    font-size: 2.5em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header { background-color: black; }
+
+
+button {
+     width: 150px;
+     height: 75px;
+     background-color: teal;
+     border-radius: 8px;
+     color: white;
+     font-size: 1.5em;
+     font-weight: 600;
+}
+
+
+/* eof */

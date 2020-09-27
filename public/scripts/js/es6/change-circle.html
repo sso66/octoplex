@@ -1,0 +1,43 @@
+<!-- changeCircle.html-->
+
+<html>
+    <head>
+        <script src="changeCircle.js"></script>
+    </head>
+    <body>
+        <figure>
+            <svg
+                width="300" 
+                height="200" 
+                viewBox="0 0 300 200"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+            <title>ECMAScript Example: A Clickable SVG Circle</title>
+                <rect 
+                    width="300" 
+                    height="200" 
+                    stroke="blue" 
+                    fill="" 
+                    display="" />
+                <svg viewBox="0 0 300 200">
+                    <circle 
+                        cx="150" 
+                        cy="100" 
+                         r="25" 
+                
+                        stroke="white"
+                        stroke-width="1"
+                        fill="green"
+                
+                        onmouseover="setSize(evt, 50); setStyle(evt, 'fill: red;');"
+                        onmouseout="setSize(evt, 25 ); setStyle(evt, 'fill: yellow;');"
+                        onclick="setLocation(evt, 300, 200);"
+                        ondblclick="setLocation(evt, 0, 0);"
+                />
+                </svg>
+            </svg>
+        </figure>
+        <figcaption></figcaption>
+    </body>
+</html>

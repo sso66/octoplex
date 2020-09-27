@@ -1,0 +1,111 @@
+// File: src/styles/layout/header.sass
+// Desc: Styles for Header Component
+// Date: 9/11/2019
+//...............................................................................   
+.app
+  display
+  
+  .searchInput
+    position: absolute
+    top: 13px
+    right: 55px
+    width: 200px
+    height: 34px
+    box-sizing: border-box
+    border: 1px solid silver
+    border-radius: 17px
+    background: white
+    padding: 0 17px
+    color: grey
+    opacity: 0
+    font-size: 13px
+    pointer-events: none
+    transition: all 0.3sease-in-out
+    -webkit-transition: all 0.3s ease-in-out
+    transform: translateX(15px)
+    -webkit-transform: translateX(15px)
+  
+    &:focus
+      outline: none
+  
+    &.active
+      opacity: 1
+      pointer-events: all
+      transform: translateX(0)
+      -webkit-transform: translateX(0)
+        
+  .header
+    display: 
+    position: relative
+    height: 60px
+    padding-top: 0
+  
+    .menuIcon
+      position: absolute
+      top: 23px
+      left: 20px
+      width: 29px
+      height: 15px
+      cursor: pointer
+      
+      &:hover
+        .dashTop, .dashBottom, .circle
+          background-color: white
+          
+      .dashTop
+        position: absolute
+        top: 0
+        left: 0
+        width: 20px
+        height: 3px
+        background: silver
+        border-radius: 3px
+        transition: all 0.2s ease-in-out
+        -webkit-transition: all 0.2s ease-in-out
+  
+      .dashBottom
+        position: absolute
+        top: auto
+        bottom: 0
+        width: 29px
+        height: 3px
+        background-color: silver
+        border-radius: 4px
+        transition: all 0.2s ease-in-out
+        -webkit-transition: all 0.2s ease-in-out
+        
+      .circle
+        position: absolute
+        top: -2px
+        right: 0
+        width: 7px
+        height: 7px
+        border-radius: 4px
+        background-color: silver
+        -webkit-transition: all 0.2s ease-in-out
+        transition: all 0.2s ease-in-out
+            
+    .title
+      display: block
+      color: #fff
+      font-size: 1.2em
+      font-weight: 600
+      text-align: center
+      line-height: 3
+      
+    .searchIcon
+      position: absolute
+      top: 18px
+      right: 20px
+      z-index: 3
+      font-size: 21px
+      color: silver
+      cursor: pointer
+      transition: all 0.3s ease
+      -webkit-transition: all 0.3s ease
+      
+      &:hover
+        color: white
+
+// eof
+

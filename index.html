@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- index.html -->
+<!-- Desc: main entry for Node.js -->
+<!-- Date: 25/2/2020 -->
+
+<html>
+    <head>
+        <title>OctoPlex Lite Server</title>
+        <meta character='utf-8'>
+    </head>
+    <link href='./server/wireframe.css' rel='stylesheet'>
+    <link href='./server/favicon.ico' rel='icon' type='image/ico'>
+    <body>
+        <div id='root'>Node.js Application</div>   
+            <header>
+                <h2>USM: Server-Side Node JavaScript: Node Package Module/Manager (NPM)</h2>
+                <aside id='content'></aside>
+                <hr />
+                <h2>USM: IndexedDB (OODBS: NoSQL) Integration: done</h2>
+                <button onclick="read()">Read</button>
+                <button onclick="readAll()">Read All</button>
+                <button onclick="add()">Add</button>
+                <button onclick="remove()">Remove</button>
+                <h2>USM: Lodash JS Library Integration: done</h2>
+            </header>
+            <main>
+                <div id="content"></div>
+                <!-- <h2>USM: Node JS Express Middleware HTTP/HTTPS Integration: pending</h2> -->
+            </main>
+        <script>
+            console.log( "Mounting index.html: IndexedDB/Application..." );
+            
+            // ___ prefixes of implmentation that we want to test ___
+            window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB || window.shimIndexedDB;
+            
+            // ___ prefixes of window.IDB objects ___
+            window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
+            window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
+            
+            if ( ! window.indexedDB ) {
+            
+                window.alert( "Your browser doesn't support a stable version of IndexedDB." );
+            
+            }
+            
+            const employeeData = [
+                { id: "00-01", name: "Frank Emnett", title: "Vice President, Software", email: "frank.emnett@carlingtech.com" },
+                { id: "00-02", name: "Stephen Oo", title: "Senior User Interface Engineer", email: "stephen.oo@carlingtech.com" }
+            ];
+            
+            var db;
+            var request = window.indexedDB.open( "OctoPlexDB", 1 );
+            
+            request.onerror = function ( event ) {
+            
+                console.log( "error: " );
+            
+            };
+            
+            request.onsuccess = function ( event ) {
+            
+                db = request.result;
+                console.log( "success: " + db );
+            
+            };
+            
+            request.onupgradeneeded = function ( event ) {
+            
+                var db = event.target.result;
+                var objectStore = db.createObjectStore( "employee", { keyPath: "id" } );
+            
+                for ( var i in employeeData ) {
+            
+                    objectStore.add( employeeData[ i ] );
+            
+                }
+            
+            };
+            
+            // ___ retrieving data from single a/c ___
+            function read() {
+            
+                var transaction = db.transaction( [ "employee" ] );
+                var objectStore = transaction.objectStore( "employee" );
+                var request = objectStore.get( "00-01" );
+            
+                request.onerror = function ( event ) {
+            
+                    alert( "Unable to retrieve data from database!" );
+            
+                };
+            
+                request.onsuccess = function ( event ) {
+            
+                    // ___ do something with the request.result! ___
+                    if ( request.result ) {
+            
+                        alert(
+                            "Name: " + request.result.name +
+                            "\nTitle: " + request.result.title +
+                            "\nEmail: " + request.result.email
+                        );
+            
+                    } else {
+            
+                        alert( "User couldn't be found in the database!" );
+            
+                    }
+            
+                };
+            
+            }
+            
+            // ___ retrieving data from group a/c ___
+            function readAll() {
+            
+                var objectStore = db.transaction( "employee" ).objectStore( "employee" );
+            
+                objectStore.openCursor().onsuccess = function ( event ) {
+            
+                    var cursor = event.target.result;
+            
+                    if ( cursor ) {
+            
+                        alert(
+                            "ID: " + cursor.key +
+                            "\nName: " + cursor.value.name +
+                            "\nTitle: " + cursor.value.title +
+                            "\nEmail: " + cursor.value.email
+                        );
+            
+                        cursor.continue();
+            
+                    } else {
+            
+                        alert( "No more entries!" );
+            
+                    }
+            
+                };
+            
+            }
+            
+            // ___ adding data ___
+            function add() {
+            
+                var request = db.transaction( [ "employee" ], "readwrite" )
+                    .objectStore( "employee" )
+                    .add( { id: "00-03", name: "Alex Polmans", title: "Senior Software Engineering", email: "alex.polmans@maretron.com" } );
+            
+                request.onsuccess = function ( event ) {
+            
+                    alert( "The user has been add to database." );
+            
+                };
+            
+                request.onerror = function ( event ) {
+            
+                    alert( "Unable to add data\r\nThe user already exist in the database!" );
+            
+                };
+            
+            }
+            
+            // removing the data
+            function remove() {
+            
+                var request = db.transaction( [ "employee" ], "readwrite" )
+                    .objectStore( "employee" )
+                    .delete( "00-03" );
+            
+                request.onsuccess = function ( event ) {
+            
+                    alert( "The entry have been removed from database." );
+            
+                };
+            
+            }
+        </script>
+        <!-- <script src="server/nodejs/IndexedDB.js"></script> -->
+        <script src="build/bundle-be.js"></script>
+    </body>
+</html>
+<!-- eof -->

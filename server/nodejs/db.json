@@ -1,0 +1,33 @@
+{
+    "posts": [ 
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typeicode"  
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
+    ],
+    "profile": {
+        "name": "typicode"
+    },
+    "component": {
+        "control" : "TANK",
+        "title" : "Fuel 0 Remaining", "units":"Gallons",
+        "majorDivisions":5, "minorDivisions":2,
+        "min":0,"max":1000,
+        "ranges" : [
+            { "min":0, "max":100, "color":"#FF4000" },
+            { "min":100, "max":200,"color":"#FFFF00" },
+            { "min":200, "max":1000,"color":"#40FF00" }
+            ],
+        "format" : "Decimal1",
+        "top":150, "left" : 200, "width":50,
+        "parameter":"TANK_REMAINING", "instance": 0, "source": 0
+    }
+}

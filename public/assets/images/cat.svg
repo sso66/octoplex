@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer" display="inline">
+  <title>top</title>
+  <polyline fill="none" id="svg_6" points="188,116 170,64 150,99 130,64 112,116 " stroke="black"/>
+ </g>
+ <g class="layer" display="inline">
+  <title>middle</title>
+  <g fill="#339933" id="svg_15" stroke="black">
+   <circle cx="135" cy="130" id="svg_16" r="5"/>
+   <circle cx="165" cy="130" id="svg_17" r="5"/>
+  </g>
+  <g id="svg_18" stroke="red">
+   <line id="svg_19" x1="155" x2="215" y1="153.96732" y2="143.96732"/>
+   <line id="svg_20" stroke="black" x1="155" x2="215" y1="153.96732" y2="163.96732"/>
+  </g>
+  <path d="m155,150l-10,0a5,10 0 0 0 10,0" fill="#ffcccc" id="svg_23" stroke="black"/>
+  <g id="svg_25" stroke="red" transform="rotate(-180 113.7 153.967)">
+   <line id="svg_26" x1="83.7" x2="143.7" y1="153.96667" y2="143.96667"/>
+   <line id="svg_27" stroke="black" x1="83.7" x2="143.7" y1="153.96667" y2="163.96667"/>
+  </g>
+  <polyline fill="none" id="svg_36" points="115,170 125,180 175,180 185,170 " stroke="black"/>
+ </g>
+ <g class="layer" display="inline">
+  <title>bottom</title>
+  <circle cx="150" cy="150" fill="none" id="svg_28" r="50" stroke="black"/>
+ </g>
+</svg>

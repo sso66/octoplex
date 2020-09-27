@@ -1,0 +1,89 @@
+// File: src/styles/index.sass
+// Desc: common styles for architectural components
+// Date: 12/06/2019
+//...............................................................................   
+@import '../styles/octoplex.sass'
+
+
+*, *:before, *:after  
+  box-sizing: border-box
+  //border: 1px solid blue
+  
+  
+\:root
+  display: 
+
+  
+html
+  display:  
+  //background-color: transparent
+  //opacity: 0.5
+  font-size: 100%
+  font: inherit
+  
+
+body
+  display:
+   
+  //background: url("../assets/images/octoplex-logo-primary.png"), linear-gradient(white, skyblue, orange)
+  //background-image: url("../assets/images/octoplex-logo-primary-black.png"), linear-gradient(skyblue, orange, black)
+  //background-image: url("../assets/images/octoplex-logo-oneline.png"), linear-gradient(white, skyblue, orange)
+  background-image: url("../assets/images/octoplex-logo-stacked.png"), linear-gradient(white, skyblue, orange)
+  //background:url("../assets/images/ocean-alexander-logo.png"), linear-gradient(white, skyblue, orange)
+  //background: url("../assets/images/ocean-alexander-logo.png"), linear-gradient(white, skyblue, orange)
+  background-size: 25% 
+  //background-size: contain
+  //background-size: cover
+  background-repeat: no-repeat, repeat
+  background-attachment: fixed
+  background-position: center center
+  background-clip: content-box
+  background-origin: padding-box
+  font-family: $n2k-font-sans-serif
+  font-size: 16px !important
+  line-height: 1.5 !important
+
+
+ol, ul
+  list-style: none
+  
+                
+.header
+  display: none
+  background: #304480
+  //padding: 10px 20px
+  // for mobile-first settings
+  //height: 93px;
+  //position: relative;
+  //background-image: url("../assets/images/blue-moon.jpg");
+  //background-repeat: no-repeat;
+  //border: 1px solid orange;
+    
+          
+.footer
+  display: none   
+  background: invert(#616161)   
+
+        
+.navbar
+  display:  
+  padding: 6px
+  text-align: center
+
+  a
+    //visibility: 
+    margin: 1px
+    background: #ddd
+    border-radius: 3px
+    padding: .1em .5em .3em .5em
+
+
+#root
+  display: 
+  &::before
+      content: "octoplex.git"
+  &::after
+      //content: "octoplex.git"
+  
+// eof
+ 

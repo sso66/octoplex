@@ -1,0 +1,54 @@
+// File: css-button.sass
+// Desc: responsive and scalable generic button styles and states 
+// Date: 8/25/2019
+//...............................................................................
+
+.css-button {
+  display: inline-block;
+  border: 1px solid #1f84ef;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;  
+  padding: 0px 50px;
+  line-height: 50px;
+  // old browsers 
+  background: #6db3f2;
+  // firefox
+  background: -moz-linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+  // chrome, safari
+  background: -webkit-gradient(linear, left top, left bottom, 
+  color-stop(0%, #6db3f2), color-stop(50% #54a3ee), 
+  color-stop(51%, #3690f0), color-stop(100%, #1369de));
+  // opera
+  background: -o linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+  // ie
+  background: -ms linear-gradient(top, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+  // w3c
+  background: linear-gradient(to bottom, #6db3f2 0%, #54a3ee 50%, #3690f0 51%, #1e69de 100%);
+  text-transform: uppercase;
+  font-family: Impact, "Arial Black", sans-serif;
+  font-size: 20px;
+  font-size: 1.42857rem;
+  text-decoration: none;
+  -webkit-font-smoothing: antialised;
+  text-shadow: 1px 0px 2px #1f84ef;
+  filter: dropshadow(color=#1f84ef, offx=1, off=0);
+}
+
+.button:hover, .button:active, .button:focus {
+  text-decoration: none;
+  // older browsers
+  background: #54a7f0;
+  // ff
+  background: -moz-linear-gradient(top, #54a7f0 0%, #3c97ec 50%, #1f84ef 51%, #1c5fcc 100%);
+  // chrome, safari
+  background: -webkit-gradient(linear, left top, left bottom, 
+  color-stop(0%, #54a7f0), color-stop(50% #3c97ec), 
+  color-stop(51%, #1f84ef), color-stop(100%, #1c5fcc));
+  // opera
+  background: -o linear-gradient(top, #54a7f0 0%, #3c97ec 50%, #1f84ef 51%, #1c5fcc 100%);
+  // ie
+  background: -ms linear-gradient(top, #54a7f0 0%, #3c97ec 50%, #1f84ef 51%, #1c5fcc 100%);
+  // w3c
+  background: linear-gradient(to bottom, #54a7f0 0%, #3c97ec 50%, #1f84ef 51%, #1c5fcc 100%); 
+}

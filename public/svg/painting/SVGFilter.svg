@@ -1,0 +1,104 @@
+<!-- SVGFilter.svg -->
+<svg 
+	width="250" 
+	height="250" 
+	viewBox="0 0 200 185"
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:svg="http://www.w3.org/2000/svg">
+	<!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+	<title>SVG Filter</title>
+	<defs>
+		<filter
+			id="MyFilter"
+	 		filterUnits="userSpaceOnUse"
+	 		x="0"
+	 		y="0"
+	 		width="200"
+	 		height="120"
+	 	>
+	 		<feGaussianBlur
+				in="SourceAlpha"
+				stdDeviation="4"
+				result="blur" 		
+	 		/> 
+	 		
+	 		<feOffset 
+	 			in="blur" 
+	 			dx="4" 
+	 			dy="4" 
+	 			result="offsetBlur"
+	 		/>
+	 		
+	 		<feSpecularLighting 
+	 			in="blur"
+	 			surfaceScale="5"
+	 			specularConstant="1"
+	 			specularExponent="10"
+	 			lighting-color="#d90000"
+	 			result="specOut"
+	 		>
+	 			<fePointLight x="-5000" y="-10000" z="20000" />
+	 		</feSpecularLighting>
+	 		
+	 		<feComposite 
+	 			in="specOut" 
+	 			in2="SourceAlpha" 
+	 			operator="in" 
+	 			result="specOut" 
+	 		/>
+	 		
+	 		<feComposite 
+	 			in="SourceGrapic" 
+	 			in2="specOut" 
+	 			operator="arithmetic" 
+	 			k1="0" 
+	 			k2="1" 
+	 			k3="1" 
+	 			k4="0"
+	 			result="litPaint"
+	 		/>
+	 		
+	 		<feMerge>
+	 			<feMergeNode in="offsetBlur" />
+	 			<feMergeNode in="litPaint" />
+	 		</feMerge>	 		
+	 	</filter>
+	 </defs>
+	 <g filter="url(#MyFilter)">
+	  <path
+	  	fill="none"
+	  	stroke="#D90000"
+	  	stroke-width="10"
+	  	d="
+	  		M50,66
+	  		c-50,0 -50,-60, 0,-60
+	  		h100
+	  		c50,0 50,60 0,60
+	  		z
+	  	"
+	  />
+	  <path
+	  	fill="#D90000"
+	  	d="
+	  		M60,56
+	  		c-30,0 -30-40, 0,-40
+	  		h80
+	  		c30,0 30,40 0,40
+	  		z
+	  	"
+		/>
+	</g>
+	<g
+	  	fill="white"
+	  	stroke="black"
+	  	font-size='40'
+	  	font-family="sans-serif"
+	  >
+	  	<text 
+	  		x="56" 
+	  		y="48">
+	  		SVG
+	  	</text>
+	</g>
+</svg>
+<!-- eof -->

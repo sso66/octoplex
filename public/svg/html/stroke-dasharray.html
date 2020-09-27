@@ -1,0 +1,63 @@
+<html>
+<head>
+    <style>
+        body {
+          background: #333;
+        }
+        
+        .module {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        svg {
+          fill: #333;
+          stroke-width: 5%;
+        }       
+         .stroke-1 {
+          stroke: red;
+          stroke-dasharray: 0;
+        }
+        
+        .stroke-2 {
+          stroke: yellow;
+          stroke-dasharray: 2;
+        }
+        
+        .stroke-3 {
+          stroke: green;
+          stroke-dasharray: 5;
+        }
+        
+        .stroke-4 {
+          stroke: url(#pattern);
+          stroke-dasharray: 10;
+        }
+
+    </style>
+</head>
+<body>
+<div class="module">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke-1" cx="60" cy="60" r="50"/>
+    </svg>
+    
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke-2" cx="60" cy="60" r="50"/>
+    </svg>
+    
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <circle class="stroke-3" cx="60" cy="60" r="50"/>
+    </svg>
+    
+    <svg width="500px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <line class="stroke-1" x1="40" x2="450" y1="20" y2="20" />
+        <line class="stroke-2" x1="40" x2="450" y1="60" y2="60" />
+        <line class="stroke-3" x1="40" x2="450" y1="100" y2="100" />  
+    </svg>
+</div>
+</body>
+</html>

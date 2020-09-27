@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit: Concept of Layers - Source Order-->
+ <g class="layer">
+  <title>circle</title>
+  <circle cx="50%" cy="50%" fill="lightgreen" id="svg_1" r="25%" stroke="#e60" stroke-width="25"/>
+ </g>
+ <g class="layer" display="inline">
+  <title>rect</title>
+  <rect fill="#8ff" height="10%" id="svg_2" stroke="black" stroke-width="6" width="80%" x="10%" y="50%"/>
+ </g>
+ <g class="layer" display="inline">
+  <title>ellipse</title>
+  <ellipse cx="50%" cy="50%" fill="yellow" fill-opacity="0.45" id="svg_3" rx="10%" ry="40%" stroke="purple" stroke-width="15"/>
+ </g>
+</svg>

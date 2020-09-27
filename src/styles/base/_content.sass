@@ -1,0 +1,60 @@
+// File: src/styles/modules/_content.sass
+// Desc: Combining @content blocks and mixins for a selector context
+// Date: 9/23/2019
+//
+// Note: 
+// 1. To pass an entire blocks of styles to a mixin, and SASS will place
+//    those blocks back into the selector declaration that calls the mixin.
+//
+// 2. Create a responsive mixin that handles three different breakpoints with
+//    @content placeholders for whatever styles we'd like to include for each
+//    breakpoint.
+//
+// 3. Also use variables to define the small, medium and large breakpoint's 
+//    width.
+// 
+// 4. Using @mixin (=)/@include (+) vs @extend in Sass?
+//
+//..............................................................................
+
+// variables "scope"
+$n2k-width-x-small: 320px
+$n2k-width-small: 768px
+$n2k-width-medium: 1024px
+$n2k-width-large: 1216px
+$n2k-width-large: 1216px
+
+// mixins "function"
+=responsive($width)
+  @if $width == large-screens
+    @media only screen and (max-width: $n2k-width-large)
+      @content
+  @else if $width == medium-screens
+    @media only screen and (max-width: $n2k-width-medium)
+      @content
+  @else if $width == small-screens
+    @media only screen and (max-width: $n2k-width-small)
+      @content
+
+
+// placeholder & selector "context"
+%content
+  width: 70%
+
+.content
+  @extend %content
+  +responsive(large-screens)
+    width: 80%
+  
+
+  +responsive(medium-screens)
+    width: 50%
+    font-size: 24px
+
+
+  +responsive(small-screens)
+    width: 100%
+    font-size: 12px
+  
+  
+// eof

@@ -1,0 +1,65 @@
+// File: styles/themes/mobile-first-grid.sass 
+// Desc: Responsive Web Design Layout with Grid BFC
+// Date: 10/4/2019
+//..............................................................................
+
+.header
+  display:
+  background: lightblue !important
+  grid-column: span 12
+    
+    
+// main content
+.content
+  display:
+  padding: 10px
+  background: orange
+  grid-column: span 8
+
+
+// secondary content
+.sidebar
+  display: 
+  background: teal
+  grid-column: span 2
+  
+  
+// tertiary content
+.menubar
+  display:
+  background: purple
+  grid-column: span 2
+         
+
+.footer
+  display: 
+  background: lightblue !important
+  grid-column: span 12
+
+
+.grid-container
+  display: grid
+  grid-template-columns: repeat(12, 1fr)
+  //grid-template-rows: 40px 100px 40px
+     
+                              
+@media screen and (max-width: 680)
+  .header
+    grid-column: span 6
+
+    
+  .content
+    grid-colunm: span 12
+
+
+  .sidebar
+    grid-row: 1
+    grid-column: span 6
+ 
+
+  .menubar
+    grid-row: 1
+    grid-column: span 6
+                                   
+  // eof
+  

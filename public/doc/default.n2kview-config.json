@@ -1,0 +1,5894 @@
+{
+  "config": {
+    "-language": "English",
+    "server": {
+      "-useFirstN2KServer": "true",
+      "-serverType": "USB",
+      "-port": "6544",
+      "-request4License": "true",
+      "-useSecondN2KServer": "false",
+      "-port2": "6544",
+      "-request4License2": "true",
+      "-useThirdN2KServer": "false",
+      "-port3": "6544",
+      "-request4License3": "true"
+    },
+    "label": "Alex PC",
+    "currentScreen": "1",
+    "screen": [
+      {
+        "-label": "Engines",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Load",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "8",
+            "-s": "4",
+            "-p": "%EL"
+          },
+          {
+            "-control": "G",
+            "-min": "120",
+            "-max": "320",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Oil Temperature",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "8",
+            "-s": "4",
+            "-p": "EOTe",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "250",
+                "-min": "230",
+                "-color": "yellow"
+              },
+              {
+                "-max": "320",
+                "-min": "250",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Coolant Level",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "12",
+            "-s": "4",
+            "-p": "LCLI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Over Temperature",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "13",
+            "-s": "4",
+            "-p": "EOTI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Water In Fuel",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "15",
+            "-s": "4",
+            "-p": "WIFI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Oil Pressure",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "14",
+            "-s": "4",
+            "-p": "LEOPI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Over Temperature",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "13",
+            "-s": "4",
+            "-p": "EOTI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Coolant Level",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "12",
+            "-s": "4",
+            "-p": "LCLI"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "528.344104716297",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "gal/hour",
+            "-averagingPeriod": "0",
+            "-title": "Fuel Rate",
+            "-useLabel": "false",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EFR",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              { "-color": "green" },
+              { "-color": "yellow" },
+              { "-color": "red" }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "120",
+            "-max": "320",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Oil Temperature",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "8",
+            "-s": "4",
+            "-p": "EOTe",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "250",
+                "-min": "230",
+                "-color": "yellow"
+              },
+              {
+                "-max": "320",
+                "-min": "250",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Load",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "20",
+            "-y": "8",
+            "-s": "4",
+            "-p": "%EL"
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "20",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "pounds/square inch",
+            "-averagingPeriod": "0",
+            "-title": "Fuel Pressure",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "20",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EFP"
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "80",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "pounds/square inch",
+            "-averagingPeriod": "0",
+            "-title": "Oil Pressure",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "4",
+            "-s": "4",
+            "-p": "EOP",
+            "range": [
+              {
+                "-max": "5",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "10",
+                "-min": "5",
+                "-color": "yellow"
+              },
+              {
+                "-max": "50",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "60",
+                "-min": "50",
+                "-color": "yellow"
+              },
+              {
+                "-max": "80",
+                "-min": "60",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "8",
+            "-max": "16",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Alternator Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "8",
+            "-s": "4",
+            "-p": "EAPot",
+            "range": [
+              {
+                "-max": "11",
+                "-min": "8",
+                "-color": "red"
+              },
+              {
+                "-max": "12",
+                "-min": "11",
+                "-color": "yellow"
+              },
+              {
+                "-max": "15",
+                "-min": "12",
+                "-color": "green"
+              },
+              {
+                "-max": "16",
+                "-min": "15",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "20",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "pounds/square inch",
+            "-averagingPeriod": "0",
+            "-title": "Fuel Pressure",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EFP"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "528.344104716297",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "gal/hour",
+            "-averagingPeriod": "0",
+            "-title": "Fuel Rate",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EFR"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Oil Pressure",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "14",
+            "-s": "4",
+            "-p": "LEOPI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Water In Fuel",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "15",
+            "-s": "4",
+            "-p": "WIFI"
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "260",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Engine Temperature",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "0",
+            "-s": "4",
+            "-p": "EWTemp",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "220",
+                "-min": "170",
+                "-color": "green"
+              },
+              {
+                "-max": "230",
+                "-min": "220",
+                "-color": "yellow"
+              },
+              {
+                "-max": "260",
+                "-min": "230",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "260",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Engine Temperature",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "12",
+            "-y": "0",
+            "-s": "4",
+            "-p": "EWTemp",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "220",
+                "-min": "170",
+                "-color": "green"
+              },
+              {
+                "-max": "230",
+                "-min": "220",
+                "-color": "yellow"
+              },
+              {
+                "-max": "260",
+                "-min": "230",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "4000",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starboard Tachometer",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Tach",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "3500",
+                "-min": "3000",
+                "-color": "yellow"
+              },
+              {
+                "-max": "4000",
+                "-min": "3500",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "4000",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Tachometer",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Tach",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "3500",
+                "-min": "3000",
+                "-color": "yellow"
+              },
+              {
+                "-max": "4000",
+                "-min": "3500",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "8",
+            "-max": "16",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Alternator Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "8",
+            "-s": "4",
+            "-p": "EAPot",
+            "range": [
+              {
+                "-max": "11",
+                "-min": "8",
+                "-color": "red"
+              },
+              {
+                "-max": "12",
+                "-min": "11",
+                "-color": "yellow"
+              },
+              {
+                "-max": "15",
+                "-min": "12",
+                "-color": "green"
+              },
+              {
+                "-max": "16",
+                "-min": "15",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "80",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "pounds/square inch",
+            "-averagingPeriod": "0",
+            "-title": "Oil Pressure",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "4",
+            "-s": "4",
+            "-p": "EOP",
+            "range": [
+              {
+                "-max": "5",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "10",
+                "-min": "5",
+                "-color": "yellow"
+              },
+              {
+                "-max": "50",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "60",
+                "-min": "50",
+                "-color": "yellow"
+              },
+              {
+                "-max": "80",
+                "-min": "60",
+                "-color": "red"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-label": "Engine Room",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Coolant Level",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "12",
+            "-y": "13",
+            "-s": "4",
+            "-p": "LCLI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Water In Fuel",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "12",
+            "-y": "14",
+            "-s": "4",
+            "-p": "WIFI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Fuel Pressure",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "12",
+            "-y": "15",
+            "-s": "4",
+            "-p": "LFPI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Check Engine",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "16",
+            "-y": "13",
+            "-s": "4",
+            "-p": "CEI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Oil Level",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "16",
+            "-y": "14",
+            "-s": "4",
+            "-p": "LEOLI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Low Oil Pressure",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "16",
+            "-y": "15",
+            "-s": "4",
+            "-p": "LEOPI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Rev Limit Exceeded",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "20",
+            "-y": "13",
+            "-s": "4",
+            "-p": "RLEI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Over Temperature",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "20",
+            "-y": "14",
+            "-s": "4",
+            "-p": "EOTI"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "High Boost Pressure",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-instance": "0",
+            "-x": "20",
+            "-y": "15",
+            "-s": "4",
+            "-p": "HBI"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Hours",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EHrs"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "528.344104716297",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "gal/hour",
+            "-averagingPeriod": "0",
+            "-title": "Fuel Rate",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EFR"
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "20",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "pounds/square inch",
+            "-averagingPeriod": "0",
+            "-title": "Fuel Pressure",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "12",
+            "-s": "4",
+            "-p": "EFP"
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Load",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "8",
+            "-s": "4",
+            "-p": "%EL"
+          },
+          {
+            "-control": "G",
+            "-min": "8",
+            "-max": "16",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Alternator Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "8",
+            "-s": "4",
+            "-p": "EAPot",
+            "range": [
+              {
+                "-max": "11",
+                "-min": "8",
+                "-color": "red"
+              },
+              {
+                "-max": "12",
+                "-min": "11",
+                "-color": "yellow"
+              },
+              {
+                "-max": "15",
+                "-min": "12",
+                "-color": "green"
+              },
+              {
+                "-max": "16",
+                "-min": "15",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "120",
+            "-max": "320",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Oil Temperature",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "8",
+            "-s": "4",
+            "-p": "EOTe",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "250",
+                "-min": "230",
+                "-color": "yellow"
+              },
+              {
+                "-max": "320",
+                "-min": "250",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "80",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "pounds/square inch",
+            "-averagingPeriod": "0",
+            "-title": "Oil Pressure",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "4",
+            "-s": "4",
+            "-p": "EOP",
+            "range": [
+              {
+                "-max": "5",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "10",
+                "-min": "5",
+                "-color": "yellow"
+              },
+              {
+                "-max": "50",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "60",
+                "-min": "50",
+                "-color": "yellow"
+              },
+              {
+                "-max": "80",
+                "-min": "60",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "260",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Engine Temperature",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "0",
+            "-s": "4",
+            "-p": "EWTemp",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "220",
+                "-min": "170",
+                "-color": "green"
+              },
+              {
+                "-max": "230",
+                "-min": "220",
+                "-color": "yellow"
+              },
+              {
+                "-max": "260",
+                "-min": "230",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "0",
+            "-max": "4000",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-averagingPeriod": "0",
+            "-title": "Port Tachometer",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Tach",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "3500",
+                "-min": "3000",
+                "-color": "yellow"
+              },
+              {
+                "-max": "4000",
+                "-min": "3500",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Engine Room",
+            "-control": "AV",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room",
+            "-useLabel": "false",
+            "-x": "12",
+            "-y": "0",
+            "-s": "12",
+            "-p": "Vid"
+          }
+        ]
+      },
+      {
+        "-label": "DC Systems",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "G",
+            "-min": "8",
+            "-max": "16",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starter Battery",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "DCV",
+            "range": [
+              {
+                "-max": "10",
+                "-min": "8",
+                "-color": "red"
+              },
+              {
+                "-max": "11",
+                "-min": "10",
+                "-color": "yellow"
+              },
+              {
+                "-max": "13",
+                "-min": "11",
+                "-color": "green"
+              },
+              {
+                "-max": "14",
+                "-min": "13",
+                "-color": "yellow"
+              },
+              {
+                "-max": "16",
+                "-min": "14",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "-3276.4",
+            "-max": "3276.4",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starter Load Current",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "8",
+            "-s": "4",
+            "-p": "DCC"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Starter Battery Temperature",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "8",
+            "-s": "4",
+            "-p": "BaTemp",
+            "range": [
+              { "-color": "red" },
+              {
+                "-max": "10",
+                "-color": "yellow"
+              },
+              {
+                "-max": "110",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "140",
+                "-min": "110",
+                "-color": "yellow"
+              },
+              {
+                "-max": "200",
+                "-min": "140",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starter Battery Charge",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "12",
+            "-s": "4",
+            "-p": "BaCap",
+            "range": [
+              {
+                "-max": "25",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "50",
+                "-min": "25",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "50",
+                "-color": "green"
+              }
+            ]
+          },
+          {
+            "-source": "Engine Room",
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Temp",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "4",
+            "-y": "12",
+            "-s": "4",
+            "-p": "ERTem"
+          },
+          {
+            "-control": "G",
+            "-min": "8",
+            "-max": "16",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "House Battery",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "0",
+            "-s": "8",
+            "-p": "DCV",
+            "range": [
+              {
+                "-max": "10",
+                "-min": "8",
+                "-color": "red"
+              },
+              {
+                "-max": "11",
+                "-min": "10",
+                "-color": "yellow"
+              },
+              {
+                "-max": "13",
+                "-min": "11",
+                "-color": "green"
+              },
+              {
+                "-max": "14",
+                "-min": "13",
+                "-color": "yellow"
+              },
+              {
+                "-max": "16",
+                "-min": "14",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "8",
+            "-max": "16",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "House Load Current",
+            "-useLabel": "false",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "8",
+            "-s": "4",
+            "-p": "DCC"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "200",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "House Battery Temperature",
+            "-useLabel": "false",
+            "-instance": "1",
+            "-x": "20",
+            "-y": "8",
+            "-s": "4",
+            "-p": "BaTemp",
+            "range": [
+              { "-color": "red" },
+              {
+                "-max": "10",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "110",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "140",
+                "-min": "110",
+                "-color": "yellow"
+              },
+              {
+                "-max": "200",
+                "-min": "140",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "House Battery Charge",
+            "-useLabel": "false",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "12",
+            "-s": "4",
+            "-p": "BaCap",
+            "range": [
+              {
+                "-max": "25",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "50",
+                "-min": "25",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "50",
+                "-color": "green"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "65532",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "House Battery Time Remaining",
+            "-useLabel": "false",
+            "-instance": "1",
+            "-x": "20",
+            "-y": "12",
+            "-s": "4",
+            "-p": "BaTR"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Pilot House Lights",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "1",
+            "-x": "8",
+            "-y": "0",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Nav Lights",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "8",
+            "-y": "2",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Anchor Light",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "3",
+            "-x": "8",
+            "-y": "4",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Deck Lights",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "4",
+            "-x": "8",
+            "-y": "6",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Bilge Pump #1",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "5",
+            "-x": "8",
+            "-y": "8",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Bilge Pump #2",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "6",
+            "-x": "8",
+            "-y": "10",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Instruments",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "7",
+            "-x": "8",
+            "-y": "12",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Aft Head",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "1",
+            "-x": "12",
+            "-y": "0",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "VHF Radio",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "2",
+            "-x": "12",
+            "-y": "2",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Single Side Band Radio",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "3",
+            "-x": "12",
+            "-y": "4",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Chart Lights",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "4",
+            "-x": "12",
+            "-y": "6",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Chart Plotter",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "5",
+            "-x": "12",
+            "-y": "8",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Cabin Lights",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "6",
+            "-x": "12",
+            "-y": "10",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Spare",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "8",
+            "-x": "12",
+            "-y": "14",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Spare",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-indicator": "8",
+            "-x": "8",
+            "-y": "14",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Underwater Lights",
+            "-useLabel": "false",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "12",
+            "-y": "12",
+            "-s": "4",
+            "-p": "CB"
+          }
+        ]
+      },
+      {
+        "-label": "AC Systems",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "G",
+            "-min": "58",
+            "-max": "62",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Gen. Frequency",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "0",
+            "-s": "4",
+            "-p": "GAvAF",
+            "range": [
+              {
+                "-max": "59",
+                "-min": "58",
+                "-color": "yellow"
+              },
+              {
+                "-max": "61",
+                "-min": "59",
+                "-color": "green"
+              },
+              {
+                "-max": "62",
+                "-min": "61",
+                "-color": "yellow"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "64255",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Gen. Current",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "0",
+            "-s": "4",
+            "-p": "GAvAC"
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "140",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Gen. Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "0",
+            "-s": "4",
+            "-p": "GAvLNV",
+            "range": [
+              {
+                "-max": "105",
+                "-min": "100",
+                "-color": "red"
+              },
+              {
+                "-max": "110",
+                "-min": "105",
+                "-color": "yellow"
+              },
+              {
+                "-max": "130",
+                "-min": "110",
+                "-color": "green"
+              },
+              {
+                "-max": "135",
+                "-min": "130",
+                "-color": "yellow"
+              },
+              {
+                "-max": "140",
+                "-min": "135",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "140",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Stbd. Gen. Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "0",
+            "-y": "4",
+            "-s": "4",
+            "-p": "GAvLNV",
+            "range": [
+              {
+                "-max": "105",
+                "-min": "100",
+                "-color": "red"
+              },
+              {
+                "-max": "110",
+                "-min": "105",
+                "-color": "yellow"
+              },
+              {
+                "-max": "130",
+                "-min": "110",
+                "-color": "green"
+              },
+              {
+                "-max": "135",
+                "-min": "130",
+                "-color": "yellow"
+              },
+              {
+                "-max": "140",
+                "-min": "135",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "58",
+            "-max": "62",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Stbd. Gen. Frequency",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "4",
+            "-y": "4",
+            "-s": "4",
+            "-p": "GAvAF",
+            "range": [
+              {
+                "-max": "59",
+                "-min": "58",
+                "-color": "yellow"
+              },
+              {
+                "-max": "61",
+                "-min": "59",
+                "-color": "green"
+              },
+              {
+                "-max": "62",
+                "-min": "61",
+                "-color": "yellow"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "64255",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Stbd. Gen. Current",
+            "-useLabel": "false",
+            "-instance": "1",
+            "-x": "8",
+            "-y": "4",
+            "-s": "4",
+            "-p": "GAvAC"
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "140",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Inverter Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "2",
+            "-x": "0",
+            "-y": "8",
+            "-s": "4",
+            "-p": "GAvLNV",
+            "range": [
+              {
+                "-max": "105",
+                "-min": "100",
+                "-color": "red"
+              },
+              {
+                "-max": "110",
+                "-min": "105",
+                "-color": "yellow"
+              },
+              {
+                "-max": "130",
+                "-min": "110",
+                "-color": "green"
+              },
+              {
+                "-max": "135",
+                "-min": "130",
+                "-color": "yellow"
+              },
+              {
+                "-max": "140",
+                "-min": "135",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "58",
+            "-max": "62",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Inverter Frequency",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "2",
+            "-x": "4",
+            "-y": "8",
+            "-s": "4",
+            "-p": "GAvAF",
+            "range": [
+              {
+                "-max": "59",
+                "-min": "58",
+                "-color": "yellow"
+              },
+              {
+                "-max": "61",
+                "-min": "59",
+                "-color": "green"
+              },
+              {
+                "-max": "62",
+                "-min": "61",
+                "-color": "yellow"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "64255",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Inverter Current",
+            "-useLabel": "false",
+            "-instance": "2",
+            "-x": "8",
+            "-y": "8",
+            "-s": "4",
+            "-p": "GAvAC"
+          },
+          {
+            "-control": "G",
+            "-min": "100",
+            "-max": "140",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Shore Power Voltage",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "3",
+            "-x": "0",
+            "-y": "12",
+            "-s": "4",
+            "-p": "GAvLNV",
+            "range": [
+              {
+                "-max": "105",
+                "-min": "100",
+                "-color": "red"
+              },
+              {
+                "-max": "110",
+                "-min": "105",
+                "-color": "yellow"
+              },
+              {
+                "-max": "130",
+                "-min": "110",
+                "-color": "green"
+              },
+              {
+                "-max": "135",
+                "-min": "130",
+                "-color": "yellow"
+              },
+              {
+                "-max": "140",
+                "-min": "135",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "G",
+            "-min": "58",
+            "-max": "62",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Shore Power Frequency",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-instance": "3",
+            "-x": "4",
+            "-y": "12",
+            "-s": "4",
+            "-p": "GAvAF",
+            "range": [
+              {
+                "-max": "59",
+                "-min": "58",
+                "-color": "yellow"
+              },
+              {
+                "-max": "61",
+                "-min": "59",
+                "-color": "green"
+              },
+              {
+                "-max": "62",
+                "-min": "61",
+                "-color": "yellow"
+              }
+            ]
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "64255",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Shore Power Current",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-x": "8",
+            "-y": "12",
+            "-s": "4",
+            "-p": "GAvAC"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Air Conditioner",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "1",
+            "-x": "12",
+            "-y": "0",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Macerator Pump",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "2",
+            "-x": "12",
+            "-y": "2",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Microwave",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "3",
+            "-x": "12",
+            "-y": "4",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Refrigerator",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "4",
+            "-x": "12",
+            "-y": "6",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "TV/Stereo",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "5",
+            "-x": "12",
+            "-y": "8",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "VCR",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "6",
+            "-x": "12",
+            "-y": "10",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Washer/Dryer",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "7",
+            "-x": "12",
+            "-y": "12",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Spare",
+            "-useLabel": "false",
+            "-instance": "5",
+            "-indicator": "8",
+            "-x": "12",
+            "-y": "14",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Alarm System",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "1",
+            "-x": "16",
+            "-y": "0",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "AC Compressor",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "2",
+            "-x": "16",
+            "-y": "2",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Aft Cabin Lights",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "3",
+            "-x": "16",
+            "-y": "4",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Aft cabin Outlets",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "4",
+            "-x": "16",
+            "-y": "6",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Bridge Lights",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "5",
+            "-x": "16",
+            "-y": "8",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Bridge Outlets",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "6",
+            "-x": "16",
+            "-y": "10",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Aft Head Lights",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "7",
+            "-x": "16",
+            "-y": "12",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Spare",
+            "-useLabel": "false",
+            "-instance": "6",
+            "-indicator": "8",
+            "-x": "16",
+            "-y": "14",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Galley Outlets",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "1",
+            "-x": "20",
+            "-y": "0",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Computer",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "2",
+            "-x": "20",
+            "-y": "2",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Battery Charger",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "3",
+            "-x": "20",
+            "-y": "4",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Inverter",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "4",
+            "-x": "20",
+            "-y": "6",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fwd Cabin Outlets",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "5",
+            "-x": "20",
+            "-y": "8",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Spare",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "6",
+            "-x": "20",
+            "-y": "10",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Spare",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "7",
+            "-x": "20",
+            "-y": "12",
+            "-s": "4",
+            "-p": "CB"
+          },
+          {
+            "-control": "Cb",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Circuit Breaker",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-indicator": "8",
+            "-x": "20",
+            "-y": "14",
+            "-s": "4",
+            "-p": "CB"
+          }
+        ]
+      },
+      {
+        "-label": "Navigation",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "16",
+            "-y": "12",
+            "-s": "4",
+            "-p": "TIME"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "MMM-DD-YYYY",
+            "-averagingPeriod": "0",
+            "-title": "Date",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "20",
+            "-y": "12",
+            "-s": "4",
+            "-p": "DATE"
+          },
+          {
+            "-control": "GPS",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "GPS Status",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "16",
+            "-y": "0",
+            "-s": "8",
+            "-p": "GPS Status"
+          },
+          {
+            "-reference": "true",
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Heading",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "0",
+            "-y": "8",
+            "-s": "4",
+            "-p": "Hdg"
+          },
+          {
+            "-reference": "true",
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Course Over Ground",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "4",
+            "-y": "8",
+            "-s": "4",
+            "-p": "COG"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "23191.1447084233",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "nautical miles",
+            "-averagingPeriod": "0",
+            "-title": "Trip Log",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "8",
+            "-y": "8",
+            "-s": "4",
+            "-p": "TrL"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "23191.1447084233",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "nautical miles",
+            "-averagingPeriod": "0",
+            "-title": "Total Log",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "8",
+            "-s": "4",
+            "-p": "ToL"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Position",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "16",
+            "-y": "8",
+            "-s": "4",
+            "-p": "Lat/Lon"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Magnetic Variation",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "20",
+            "-y": "8",
+            "-s": "4",
+            "-p": "Var"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "40",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "nautical miles/hour",
+            "-averagingPeriod": "0",
+            "-title": "Speed Through Water",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "0",
+            "-y": "12",
+            "-s": "4",
+            "-p": "STW"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "40",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "nautical miles/hour",
+            "-averagingPeriod": "0",
+            "-title": "Speed Over Ground",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "4",
+            "-y": "12",
+            "-s": "4",
+            "-p": "SOG"
+          },
+          {
+            "-source": "Sea",
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Water Temperature",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "12",
+            "-s": "4",
+            "-p": "SeaTem"
+          },
+          {
+            "-control": "Cr",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Heading",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Hdg"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "14091207.3490814",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "feet",
+            "-averagingPeriod": "0",
+            "-title": "Water Depth",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-x": "8",
+            "-y": "12",
+            "-s": "4",
+            "-p": "Dep"
+          },
+          {
+            "-reference": "True",
+            "-control": "W",
+            "-min": "58",
+            "-max": "62",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-unit": "nautical miles/hour",
+            "-averagingPeriod": "0",
+            "-title": "True Wind",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "3",
+            "-x": "8",
+            "-y": "0",
+            "-s": "8",
+            "-p": "WiDi"
+          }
+        ]
+      },
+      {
+        "-label": "Environment",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "24-hour",
+            "-averagingPeriod": "0",
+            "-title": "Sunset",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "16",
+            "-y": "12",
+            "-s": "4",
+            "-p": "SSt"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "24-hour",
+            "-averagingPeriod": "0",
+            "-title": "Twilight PM",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "20",
+            "-y": "12",
+            "-s": "4",
+            "-p": "TwPM"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Sunrise Local",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "12",
+            "-y": "12",
+            "-s": "4",
+            "-p": "SRs"
+          },
+          {
+            "-source": "Atmospheric",
+            "-control": "L",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "inches mercury",
+            "-averagingPeriod": "0",
+            "-title": "Barometer",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-timeRange": "720",
+            "-x": "0",
+            "-y": "8",
+            "-s": "8",
+            "-p": "Bar"
+          },
+          {
+            "-reference": "Ground",
+            "-control": "N",
+            "-min": "0",
+            "-max": "4000",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Wind Direction",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "WiDi"
+          },
+          {
+            "-reference": "Ground",
+            "-control": "Ca",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Wind Direction",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "8",
+            "-y": "0",
+            "-s": "4",
+            "-p": "WiDi"
+          },
+          {
+            "-reference": "Ground",
+            "-control": "D",
+            "-min": "0",
+            "-max": "79.3088552915767",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "nautical miles/hour",
+            "-averagingPeriod": "0",
+            "-title": "Wind Speed",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "0",
+            "-s": "4",
+            "-p": "WiSp"
+          },
+          {
+            "-control": "D",
+            "-min": "-146.2",
+            "-max": "390.2",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Wind Chill Factor",
+            "-useLabel": "false",
+            "-x": "16",
+            "-y": "0",
+            "-s": "4",
+            "-p": "WiCh"
+          },
+          {
+            "-source": "Outside",
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Heat Index",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "20",
+            "-y": "0",
+            "-s": "4",
+            "-p": "HeI"
+          },
+          {
+            "-source": "Outside",
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Temperature Outside",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "8",
+            "-y": "4",
+            "-s": "4",
+            "-p": "OutTem"
+          },
+          {
+            "-source": "Outside",
+            "-control": "D",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Humidity Outside",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "4",
+            "-s": "4",
+            "-p": "OutHum"
+          },
+          {
+            "-source": "Atmospheric",
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "inches mercury",
+            "-averagingPeriod": "0",
+            "-title": "Barometer",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "16",
+            "-y": "4",
+            "-s": "4",
+            "-p": "Bar"
+          },
+          {
+            "-source": "Inside",
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Temperature Inside",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "8",
+            "-y": "8",
+            "-s": "4",
+            "-p": "InTem"
+          },
+          {
+            "-source": "Inside",
+            "-control": "D",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Humidity Inside",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "8",
+            "-s": "4",
+            "-p": "InHum"
+          },
+          {
+            "-source": "Sea",
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Sea Temperature",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "16",
+            "-y": "8",
+            "-s": "4",
+            "-p": "SeaTem"
+          },
+          {
+            "-control": "M",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Moon Phase",
+            "-useLabel": "false",
+            "-x": "20",
+            "-y": "8",
+            "-s": "4",
+            "-p": "Moon"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Twilight AM Local",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "8",
+            "-y": "12",
+            "-s": "4",
+            "-p": "TwAM"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "150",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degF",
+            "-averagingPeriod": "0",
+            "-title": "Dew Point",
+            "-useLabel": "false",
+            "-instance": "3",
+            "-x": "20",
+            "-y": "4",
+            "-s": "4",
+            "-p": "Dew"
+          }
+        ]
+      },
+      {
+        "-label": "Tanks",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-source": "Port",
+            "-control": "TB",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Trim Tab",
+            "-useLabel": "false",
+            "-x": "8",
+            "-y": "8",
+            "-s": "8",
+            "-p": "TTPt",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "100",
+                "-min": "0",
+                "-color": "green"
+              },
+              { "-color": "yellow" },
+              { "-color": "red" }
+            ]
+          },
+          {
+            "-source": "Starboard",
+            "-control": "TB",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starboard Trim Tab",
+            "-useLabel": "false",
+            "-x": "12",
+            "-y": "8",
+            "-s": "8",
+            "-p": "TTSbd",
+            "range": [
+              { "-color": "red" },
+              { "-color": "yellow" },
+              {
+                "-max": "100",
+                "-min": "0",
+                "-color": "green"
+              },
+              { "-color": "yellow" },
+              { "-color": "red" }
+            ]
+          },
+          {
+            "-source": "Fuel",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Fuel",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TLv",
+            "range": [
+              {
+                "-max": "5",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "10",
+                "-min": "5",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Fuel",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starboard Fuel",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "4",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TLv",
+            "range": [
+              {
+                "-max": "5",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "10",
+                "-min": "5",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "10",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Black Water",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Black Water",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "4",
+            "-y": "8",
+            "-s": "8",
+            "-p": "TLv",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "80",
+                "-min": "0",
+                "-color": "green"
+              },
+              {
+                "-max": "90",
+                "-min": "80",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "90",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Waste Water",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Waste Water (Port)",
+            "-useLabel": "false",
+            "-minorDivisions": "2",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "8",
+            "-s": "8",
+            "-p": "TLv",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "80",
+                "-min": "0",
+                "-color": "green"
+              },
+              {
+                "-max": "90",
+                "-min": "80",
+                "-color": "yellow"
+              },
+              {
+                "-max": "130",
+                "-min": "90",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Fresh Water",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "600",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "gal",
+            "-averagingPeriod": "0",
+            "-title": "Port Fresh Water",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "0",
+            "-x": "12",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TRm",
+            "range": [
+              {
+                "-max": "100",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "200",
+                "-min": "100",
+                "-color": "yellow"
+              },
+              {
+                "-max": "600",
+                "-min": "200",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Fuel",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Total Fuel",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "4",
+            "-x": "8",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TTLv",
+            "selections": {
+              "selectionGroup": {
+                "selection": [
+                  {
+                    "-key": "0",
+                    "-label": "Tank Instances 0",
+                    "-selectionKey": "tankInstance"
+                  },
+                  {
+                    "-key": "1",
+                    "-label": "Tank Instances 1",
+                    "-selectionKey": "tankInstance"
+                  }
+                ]
+              }
+            },
+            "range": [
+              {
+                "-max": "10",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "20",
+                "-min": "10",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "20",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Fresh Water",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "600",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "gal",
+            "-averagingPeriod": "0",
+            "-title": "Remaining",
+            "-useLabel": "true",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "1",
+            "-x": "16",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TRm",
+            "range": [
+              {
+                "-max": "50",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "110",
+                "-min": "50",
+                "-color": "yellow"
+              },
+              {
+                "-max": "600",
+                "-min": "110",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Fresh Water",
+            "-control": "TA",
+            "-min": "0",
+            "-max": "1200",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "gal",
+            "-averagingPeriod": "0",
+            "-title": "Total Fresh Water",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-x": "20",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TTRm",
+            "selections": {
+              "selectionGroup": {
+                "selection": [
+                  {
+                    "-key": "0",
+                    "-label": "Tank Instances 0",
+                    "-selectionKey": "tankInstance"
+                  },
+                  {
+                    "-key": "1",
+                    "-label": "Tank Instances 1",
+                    "-selectionKey": "tankInstance"
+                  }
+                ]
+              }
+            },
+            "range": [
+              {
+                "-max": "120",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "240",
+                "-min": "120",
+                "-color": "yellow"
+              },
+              {
+                "-max": "1200",
+                "-min": "240",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "B",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starter Bat. Capacity",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "0",
+            "-x": "16",
+            "-y": "8",
+            "-s": "8",
+            "-p": "BaCap",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "75",
+                "-color": "green"
+              },
+              {
+                "-max": "75",
+                "-min": "50",
+                "-color": "yellow"
+              },
+              {
+                "-max": "50",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "B",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "House Bat. Capacity",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "1",
+            "-x": "20",
+            "-y": "8",
+            "-s": "8",
+            "-p": "BaCap",
+            "range": [
+              {
+                "-max": "25",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "50",
+                "-min": "25",
+                "-color": "yellow"
+              },
+              {
+                "-max": "100",
+                "-min": "50",
+                "-color": "green"
+              },
+              { "-color": "yellow" },
+              { "-color": "red" }
+            ]
+          }
+        ]
+      },
+      {
+        "-label": "Indicators",
+        "-width": "16",
+        "-height": "10",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Bilge",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "1",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Hatch",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "5",
+            "-x": "0",
+            "-y": "8",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room LP",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "4",
+            "-x": "0",
+            "-y": "6",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Blower",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "6",
+            "-x": "8",
+            "-y": "0",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Exhaust Fan",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "8",
+            "-x": "8",
+            "-y": "4",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Bilge Pump",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "7",
+            "-x": "8",
+            "-y": "2",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Air Intake",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "9",
+            "-x": "8",
+            "-y": "6",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Water Maker",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "10",
+            "-x": "8",
+            "-y": "8",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Carbon Monoxide",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "1",
+            "-indicator": "2",
+            "-x": "0",
+            "-y": "4",
+            "-s": "8",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Room Smoke",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "black",
+            "-error_color": "yellow",
+            "-instance": "1",
+            "-indicator": "1",
+            "-x": "0",
+            "-y": "2",
+            "-s": "8",
+            "-p": "IL"
+          }
+        ]
+      },
+      {
+        "-label": "Nav. Lights",
+        "-width": "72",
+        "-height": "48",
+        "-background": "app:/backgrounds/Sandrine - both Profiles.jpg",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "TX",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Navigation Lights",
+            "-useLabel": "false",
+            "-x": "0",
+            "-y": "0",
+            "-s": "28",
+            "-p": "Txt"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "gh",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "3",
+            "-x": "41",
+            "-y": "4",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "gh",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "38",
+            "-y": "7",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "gh",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "28",
+            "-y": "27",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": " ",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "59",
+            "-y": "14",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBL",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": " ",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "7",
+            "-y": "36",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": " ",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "41",
+            "-y": "36",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": " ",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "26",
+            "-y": "15",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBL",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "gh",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "36",
+            "-y": "7",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "gh",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "30",
+            "-y": "27",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": " ",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "43",
+            "-y": "36",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBL",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": " ",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "24",
+            "-y": "15",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "50",
+            "-y": "23",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "54",
+            "-y": "23",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "58",
+            "-y": "23",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "62",
+            "-y": "23",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "4",
+            "-y": "44",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "8",
+            "-y": "44",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "12",
+            "-y": "44",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Status",
+            "-useLabel": "false",
+            "-on_color": "blue",
+            "-off_color": "none",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "16",
+            "-y": "44",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-source": "Water",
+            "-control": "Bb",
+            "-min": "0",
+            "-max": "200",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "feet",
+            "-averagingPeriod": "0",
+            "-title": "Bow Depth",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "24",
+            "-y": "23",
+            "-s": "1",
+            "-p": "WtrPres",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Water",
+            "-control": "Bb",
+            "-min": "0",
+            "-max": "200",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "feet",
+            "-averagingPeriod": "0",
+            "-title": "Bow Depth",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "24",
+            "-y": "23",
+            "-s": "1",
+            "-p": "WtrPres",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-source": "Water",
+            "-control": "Bb",
+            "-min": "0",
+            "-max": "200",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "feet",
+            "-averagingPeriod": "0",
+            "-title": "Bow Depth",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "24",
+            "-y": "23",
+            "-s": "1",
+            "-p": "WtrPres",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "gh",
+            "-useLabel": "false",
+            "-on_color": "white",
+            "-off_color": "none",
+            "-error_color": "yellow",
+            "-instance": "3",
+            "-indicator": "3",
+            "-x": "25",
+            "-y": "24",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "PB4",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Underwater Lights",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "7",
+            "-x": "62",
+            "-y": "9",
+            "-s": "8",
+            "-p": "CB"
+          },
+          {
+            "-control": "PB4",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Anchor Lights",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "3",
+            "-indicator": "3",
+            "-x": "62",
+            "-y": "1",
+            "-s": "8",
+            "-p": "CB"
+          },
+          {
+            "-control": "PB4",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Nav Lights",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "3",
+            "-indicator": "2",
+            "-x": "62",
+            "-y": "5",
+            "-s": "8",
+            "-p": "CB"
+          }
+        ]
+      },
+      {
+        "-label": "Fire Alarms",
+        "-width": "24",
+        "-height": "16",
+        "-background": "app:/backgrounds/Sandrine Decks.jpg",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "1",
+            "-x": "10",
+            "-y": "3",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "5",
+            "-x": "9",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "6",
+            "-x": "9",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "7",
+            "-x": "11",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "TX",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire / CO Alarms",
+            "-useLabel": "false",
+            "-x": "8",
+            "-y": "0",
+            "-s": "7",
+            "-p": "Txt"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "1",
+            "-x": "5",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "2",
+            "-x": "11",
+            "-y": "3",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "9",
+            "-x": "4",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "10",
+            "-x": "4",
+            "-y": "9",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "5",
+            "-x": "8",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "6",
+            "-x": "9",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "3",
+            "-x": "11",
+            "-y": "7",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "4",
+            "-x": "12",
+            "-y": "7",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "7",
+            "-x": "14",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "8",
+            "-x": "15",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "2",
+            "-x": "6",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "3",
+            "-x": "5",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "4",
+            "-x": "6",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "8",
+            "-x": "12",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "9",
+            "-x": "12",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "10",
+            "-x": "13",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "11",
+            "-x": "14",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "12",
+            "-x": "15",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "13",
+            "-x": "17",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "Is",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "14",
+            "-x": "18",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          }
+        ]
+      },
+      {
+        "-label": "Motion & Door Status",
+        "-width": "24",
+        "-height": "16",
+        "-background": "app:/backgrounds/Sandrine Decks.jpg",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "TX",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Motion & Door Status",
+            "-useLabel": "false",
+            "-x": "8",
+            "-y": "0",
+            "-s": "7",
+            "-p": "Txt"
+          },
+          {
+            "-control": "IBL",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Motion",
+            "-useLabel": "true",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "yellow",
+            "-instance": "2",
+            "-indicator": "1",
+            "-x": "9",
+            "-y": "4",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "2",
+            "-indicator": "3",
+            "-x": "12",
+            "-y": "3",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBL",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "2",
+            "-indicator": "9",
+            "-x": "5",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "10",
+            "-x": "5",
+            "-y": "9",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBD",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "yellow",
+            "-instance": "0",
+            "-indicator": "5",
+            "-x": "8",
+            "-y": "7",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "6",
+            "-x": "9",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "3",
+            "-x": "13",
+            "-y": "9",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBD",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "4",
+            "-x": "12",
+            "-y": "7",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "7",
+            "-x": "14",
+            "-y": "8",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "0",
+            "-indicator": "8",
+            "-x": "16",
+            "-y": "9",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "1",
+            "-x": "2",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBD",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "2",
+            "-x": "7",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBU",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "4",
+            "-x": "7",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "3",
+            "-x": "4",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "5",
+            "-x": "9",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "6",
+            "-x": "10",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "7",
+            "-x": "11",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "8",
+            "-x": "12",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "9",
+            "-x": "12",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBL",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "10",
+            "-x": "14",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "11",
+            "-x": "15",
+            "-y": "14",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "12",
+            "-x": "15",
+            "-y": "12",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBR",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Fire",
+            "-useLabel": "false",
+            "-on_color": "red",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "13",
+            "-x": "17",
+            "-y": "13",
+            "-s": "1",
+            "-p": "IL"
+          },
+          {
+            "-control": "IBC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "CO",
+            "-useLabel": "false",
+            "-on_color": "yellow",
+            "-off_color": "green",
+            "-error_color": "red",
+            "-instance": "1",
+            "-indicator": "14",
+            "-x": "5",
+            "-y": "4",
+            "-s": "1",
+            "-p": "IL"
+          }
+        ]
+      },
+      {
+        "-label": "Misc. #1",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "100",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Percent Engine Torque",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "8",
+            "-s": "8",
+            "-p": "%ET"
+          },
+          {
+            "-control": "A",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "0",
+            "-y": "0",
+            "-s": "8",
+            "-p": "TIME"
+          },
+          {
+            "-control": "D",
+            "-min": "0",
+            "-max": "1000000",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Engine Hours",
+            "-useLabel": "false",
+            "-instance": "0",
+            "-x": "8",
+            "-y": "0",
+            "-s": "8",
+            "-p": "EHrs"
+          },
+          {
+            "-control": "RA",
+            "-max": "70",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-averagingPeriod": "0",
+            "-title": "Rudder Angle/Order",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "7",
+            "-instance": "0",
+            "-x": "16",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Rudder"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Position",
+            "-useLabel": "false",
+            "-timezoneValue": "0",
+            "-instance": "-1",
+            "-x": "16",
+            "-y": "8",
+            "-s": "8",
+            "-p": "Lat/Lon"
+          },
+          {
+            "-control": "DG",
+            "-min": "0",
+            "-max": "40",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "feet",
+            "-averagingPeriod": "0",
+            "-title": "Water Below Transducer",
+            "-useLabel": "false",
+            "-instance": "7",
+            "-timeRange": "720",
+            "-x": "8",
+            "-y": "8",
+            "-s": "8",
+            "-p": "WatBel"
+          }
+        ]
+      },
+      {
+        "-label": "Misc. #2",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "Il",
+            "-min": "-300",
+            "-max": "300",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-averagingPeriod": "0",
+            "-title": "Roll",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "18",
+            "-y": "10",
+            "-s": "6",
+            "-p": "Roll"
+          },
+          {
+            "-control": "G",
+            "-min": "-100",
+            "-max": "100",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-unit": "degrees/second",
+            "-averagingPeriod": "0",
+            "-title": "Rate of Turn",
+            "-useLabel": "false",
+            "-minorDivisions": "5",
+            "-majorDivisions": "4",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "10",
+            "-s": "6",
+            "-p": "RoT"
+          },
+          {
+            "-reference": "True",
+            "-control": "W",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-unit": "nautical miles/hour",
+            "-averagingPeriod": "0",
+            "-title": "True Wind",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "6",
+            "-y": "10",
+            "-s": "6",
+            "-p": "WiDi"
+          },
+          {
+            "-reference": "Apparent",
+            "-control": "W",
+            "-min": "-300",
+            "-max": "300",
+            "-trackMin": "true",
+            "-trackMax": "true",
+            "-unit": "nautical miles/hour",
+            "-averagingPeriod": "0",
+            "-title": "Apparent Wind",
+            "-useLabel": "false",
+            "-minorDivisions": "4",
+            "-majorDivisions": "5",
+            "-instance": "-1",
+            "-x": "0",
+            "-y": "10",
+            "-s": "6",
+            "-p": "WiDi"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Roll",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "10",
+            "-y": "0",
+            "-s": "4",
+            "-p": "Roll"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Pitch",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "10",
+            "-y": "4",
+            "-s": "4",
+            "-p": "Pitch"
+          },
+          {
+            "-control": "At",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Attitude",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "14",
+            "-y": "0",
+            "-s": "10",
+            "-p": "Att"
+          },
+          {
+            "-control": "AW",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "feet",
+            "-averagingPeriod": "0",
+            "-title": "Watch",
+            "-useLabel": "false",
+            "-alertId": "20680",
+            "-x": "0",
+            "-y": "0",
+            "-s": "10",
+            "-p": "Watch"
+          }
+        ]
+      },
+      {
+        "-label": "Watermaker",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": {
+          "-control": "SR",
+          "-trackMin": "false",
+          "-trackMax": "false",
+          "-averagingPeriod": "0",
+          "-title": "Composite Status",
+          "-useLabel": "false",
+          "-instance": "0",
+          "-x": "5",
+          "-y": "1",
+          "-s": "14",
+          "-p": "SRSt"
+        }
+      },
+      {
+        "-label": "Air Conditioners",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "DIM",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Ice Maker",
+            "-useLabel": "false",
+            "-instance": "-1",
+            "-x": "12",
+            "-y": "2",
+            "-s": "12",
+            "-p": "DoAIm"
+          },
+          {
+            "-control": "DAC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "degC",
+            "-averagingPeriod": "0",
+            "-title": "Elite Air Conditioner",
+            "-useLabel": "true",
+            "-instance": "0",
+            "-x": "0",
+            "-y": "2",
+            "-s": "12",
+            "-p": "DoACE",
+            "range": [
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "green"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "yellow"
+              },
+              {
+                "-max": "0",
+                "-min": "0",
+                "-color": "red"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "-label": "Bilge Pumps",
+        "-width": "24",
+        "-height": "16",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "TX",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Bilge Pump",
+            "-useLabel": "false",
+            "-x": "3",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Txt"
+          },
+          {
+            "-control": "TX",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Starboard Bilge Pump",
+            "-useLabel": "false",
+            "-x": "13",
+            "-y": "0",
+            "-s": "8",
+            "-p": "Txt"
+          },
+          {
+            "-control": "PB4",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Port Bilge Pump",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "4",
+            "-x": "4",
+            "-y": "10",
+            "-s": "6",
+            "-p": "CB"
+          },
+          {
+            "-control": "DC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-counterMatchValue": "1",
+            "-averagingPeriod": "0",
+            "-title": "Run Count",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "4",
+            "-x": "3",
+            "-y": "6",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "TI",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-counterMatchValue": "1",
+            "-averagingPeriod": "0",
+            "-title": "Run Time",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "4",
+            "-x": "7",
+            "-y": "6",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Running",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "4",
+            "-x": "4",
+            "-y": "3",
+            "-s": "6",
+            "-p": "IL"
+          },
+          {
+            "-control": "I",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Running",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "5",
+            "-x": "14",
+            "-y": "3",
+            "-s": "6",
+            "-p": "IL"
+          },
+          {
+            "-control": "DC",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-counterMatchValue": "1",
+            "-averagingPeriod": "0",
+            "-title": "Run Count",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "5",
+            "-x": "13",
+            "-y": "6",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "TI",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-counterMatchValue": "1",
+            "-averagingPeriod": "0",
+            "-title": "Run Time",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "5",
+            "-x": "17",
+            "-y": "6",
+            "-s": "4",
+            "-p": "IL"
+          },
+          {
+            "-control": "PB4",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-averagingPeriod": "0",
+            "-title": "Stbd Bilge Pump",
+            "-useLabel": "false",
+            "-on_color": "green",
+            "-off_color": "black",
+            "-error_color": "red",
+            "-instance": "4",
+            "-indicator": "5",
+            "-x": "14",
+            "-y": "10",
+            "-s": "6",
+            "-p": "CB"
+          }
+        ]
+      },
+      {
+        "-label": "World Clocks",
+        "-width": "24",
+        "-height": "16",
+        "-background": "app:/backgrounds/World_Clocks_BKGND.png",
+        "-includeInTabs": "true",
+        "-hideScreen": "false",
+        "component": [
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "MMM-DD-YYYY",
+            "-averagingPeriod": "0",
+            "-title": "Date",
+            "-useLabel": "false",
+            "-timezoneValue": "Local",
+            "-x": "0",
+            "-y": "0",
+            "-s": "4",
+            "-p": "DATE"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "MMM-DD-YYYY",
+            "-averagingPeriod": "0",
+            "-title": "Date",
+            "-useLabel": "false",
+            "-timezoneValue": "0",
+            "-x": "20",
+            "-y": "0",
+            "-s": "4",
+            "-p": "DATE"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "-480",
+            "-x": "1",
+            "-y": "13",
+            "-s": "3",
+            "-p": "TIME"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "-180",
+            "-x": "5",
+            "-y": "13",
+            "-s": "3",
+            "-p": "TIME"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "0",
+            "-x": "10",
+            "-y": "13",
+            "-s": "3",
+            "-p": "TIME"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "180",
+            "-x": "15",
+            "-y": "13",
+            "-s": "3",
+            "-p": "TIME"
+          },
+          {
+            "-control": "D",
+            "-trackMin": "false",
+            "-trackMax": "false",
+            "-unit": "am, pm",
+            "-averagingPeriod": "0",
+            "-title": "Time",
+            "-useLabel": "false",
+            "-timezoneValue": "480",
+            "-x": "20",
+            "-y": "13",
+            "-s": "3",
+            "-p": "TIME"
+          }
+        ]
+      }
+    ],
+    "unit": [
+      {
+        "-type": "Distance",
+        "-default": "nautical miles"
+      },
+      {
+        "-type": "FuelConsumption",
+        "-default": "gals/nautical mile"
+      },
+      {
+        "-type": "MotionAcceleration",
+        "-default": "feet/sec2"
+      },
+      {
+        "-type": "Resistance",
+        "-default": "ohm"
+      },
+      {
+        "-type": "Temperature",
+        "-default": "degF"
+      },
+      {
+        "-type": "AtmosphericPressure",
+        "-default": "inches mercury"
+      },
+      {
+        "-type": "Force",
+        "-default": "newtons"
+      },
+      {
+        "-type": "WindSpeed",
+        "-default": "nautical miles/hour"
+      },
+      {
+        "-type": "FuelEconomy",
+        "-default": "nautical miles/gal"
+      },
+      {
+        "-type": "Volume",
+        "-default": "gal"
+      },
+      {
+        "-type": "TemperatureFarenheit",
+        "-default": "degF"
+      },
+      {
+        "-type": "WaterProductionRate",
+        "-default": "gal/min"
+      },
+      {
+        "-type": "Time",
+        "-default": "am, pm"
+      },
+      {
+        "-type": "MotionDistance",
+        "-default": "inches"
+      },
+      {
+        "-type": "MotionVelocity",
+        "-default": "inch/sec"
+      },
+      {
+        "-type": "Depth",
+        "-default": "feet"
+      },
+      {
+        "-type": "AngularVelocity",
+        "-default": "degrees/minute"
+      },
+      {
+        "-type": "Seconds",
+        "-default": "hh:mm"
+      },
+      {
+        "-type": "AngularAcceleration",
+        "-default": "degrees/minute2"
+      },
+      {
+        "-type": "Date",
+        "-default": "MM-DD-YYYY"
+      },
+      {
+        "-type": "Pressure",
+        "-default": "pounds/square inch"
+      },
+      {
+        "-type": "Speed",
+        "-default": "nautical miles/hour"
+      },
+      {
+        "-type": "LatLon",
+        "-default": "Lat, Lon"
+      },
+      {
+        "-type": "FuelRate",
+        "-default": "gal/hour"
+      }
+    ],
+    "setting": [
+      {
+        "-name": "windowX",
+        "-value": "0"
+      },
+      {
+        "-name": "Wind True Reference Is Station",
+        "-value": "false"
+      },
+      {
+        "-name": "Night Mode",
+        "-value": "false"
+      },
+      {
+        "-name": "windowHeight",
+        "-value": "1050"
+      },
+      {
+        "-name": "windowY",
+        "-value": "0"
+      },
+      {
+        "-name": "Use NMEA 2000 Time Offset",
+        "-value": "false"
+      },
+      {
+        "-name": "windowWidth",
+        "-value": "1680"
+      },
+      {
+        "-name": "Use True North",
+        "-value": "false"
+      },
+      {
+        "-name": "Local Time Offset",
+        "-value": "-360"
+      },
+      {
+        "-name": "FullScreen",
+        "-value": "true"
+      },
+      {
+        "-name": "Wind True Reference Is Ground",
+        "-value": "true"
+      }
+    ],
+    "Email": { "-serverPort": "25" },
+    "Sms": {
+      
+    },
+    "Vessel": {
+      "-mode": "disabled",
+      "-ignoreAlertModeChanges": "false",
+      "-generateGlobalAlerts": "true",
+      "-soundOnRemoteAlerts": "true",
+      "-onlySendSmsIfEmailFailed": "false",
+      "-showAlertsInChosenMode": "false",
+      "-showCautions": "false"
+    },
+    "Alert": [
+      {
+        "-alertId": "9191",
+        "-uniqueId": "0",
+        "-description": "BNWAS",
+        "-actionText": "null",
+        "-needsPassword": "false",
+        "-global": "false",
+        "-alertType": "0",
+        "-alertCategory": "15",
+        "-silencePeriod": "120000",
+        "-acceptPeriod": "180000",
+        "-setDelay": "5000",
+        "-clearDelay": "5000",
+        "-activeWhenMoored": "true",
+        "-activeWhenUnderway": "true",
+        "-activeWhenAway": "true",
+        "-activeWhenStay": "true",
+        "-activeWhenAnchored": "true",
+        "-alwaysDisabled": "true",
+        "-annunciators": "false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false",
+        "-tone": "4",
+        "-wavFilename": "null",
+        "-enableAnnunciators": "true",
+        "-enableComputerSound": "false",
+        "-enableSwitchAction": "false",
+        "-switchActionInstance": "0",
+        "-switchActionIndicator": "1",
+        "-switchInactiveState": "0",
+        "-switchActiveState": "1",
+        "-switchAcceptedState": "0",
+        "-switchAwaitingCancelState": "0",
+        "-enableActivatedEmail": "false",
+        "-enableClearedEmail": "false",
+        "-useDefaultToAddress": "true",
+        "-useAdditionalAddress": "false",
+        "-enableActivatedSms": "false",
+        "-enableClearedSms": "false",
+        "-useDefaultSmsPhoneNo": "true",
+        "-useAdditionalSmsPhoneNos": "false",
+        "BNWAS_Alert": {
+          "-alwaysDisabled": "true",
+          "-dormantPeriod": "180000",
+          "-thirdStageDelay": "120000",
+          "-thirdStageWithSecondStage": "false",
+          "-firstAnnunciator": "0",
+          "-firstTone": "4",
+          "-secondAnnunciator": "1",
+          "-secondTone": "3",
+          "-thirdAnnunciator": "2",
+          "-thirdTone": "3"
+        }
+      },
+      {
+        "-alertId": "NaN",
+        "-uniqueId": "0",
+        "-description": "TRIP",
+        "-location": "null",
+        "-needsPassword": "false",
+        "-global": "true",
+        "-alertType": "0",
+        "-alertCategory": "0",
+        "-silencePeriod": "120000",
+        "-acceptPeriod": "0",
+        "-setDelay": "0",
+        "-clearDelay": "0",
+        "-activeWhenMoored": "true",
+        "-activeWhenUnderway": "true",
+        "-activeWhenAway": "true",
+        "-activeWhenStay": "true",
+        "-activeWhenAnchored": "true",
+        "-alwaysDisabled": "true",
+        "-annunciators": "true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true",
+        "-tone": "4",
+        "-wavFilename": "null",
+        "-enableAnnunciators": "true",
+        "-enableComputerSound": "true",
+        "-enableSwitchAction": "false",
+        "-switchActionInstance": "0",
+        "-switchActionIndicator": "1",
+        "-switchInactiveState": "0",
+        "-switchActiveState": "1",
+        "-switchAcceptedState": "0",
+        "-switchAwaitingCancelState": "0",
+        "-enableActivatedEmail": "false",
+        "-enableClearedEmail": "false",
+        "-useDefaultToAddress": "true",
+        "-useAdditionalAddress": "false",
+        "-enableActivatedSms": "false",
+        "-enableClearedSms": "false",
+        "-useDefaultSmsPhoneNo": "true",
+        "-useAdditionalSmsPhoneNos": "false",
+        "TrippedBreakerAlert": {
+          "-parameter": "CB",
+          "-instance": "0",
+          "-indicator": "255"
+        }
+      }
+    ],
+    "AlertPage": {
+      "-showInactive": "true",
+      "-showDisabled": "true"
+    },
+    "loadShedding": {
+      "-loadSheddingEnabled": "false",
+      "-delayBetweenSheds": "5000",
+      "source": [
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        },
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        },
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        },
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        }
+      ]
+    },
+    "loadShedding2": {
+      "-loadSheddingEnabled": "false",
+      "-delayBetweenSheds": "5000",
+      "source": [
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        },
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        },
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        },
+        {
+          "-enabled": "false",
+          "-acMonitorType": "1",
+          "-acMonitorInstance": "-1",
+          "-loadSheddingCurrent": "NaN"
+        }
+      ]
+    },
+    "CloudParam": [
+      {
+        "-parameterId": "3",
+        "-title": "Lat. / Long.",
+        "-shortName": "Lat/Lon",
+        "-instance": "-1",
+        "-tankInstances": "0",
+        "-engineInstances": "0",
+        "-key": "-1",
+        "-useLabel": "false",
+        "-txInterval": "300000",
+        "-txOnChange": "false"
+      },
+      {
+        "-parameterId": "6",
+        "-title": "Course Over Ground",
+        "-shortName": "COG",
+        "-instance": "-1",
+        "-tankInstances": "0",
+        "-engineInstances": "0",
+        "-key": "-1",
+        "-useLabel": "false",
+        "-txInterval": "300000",
+        "-txOnChange": "false"
+      },
+      {
+        "-parameterId": "7",
+        "-title": "Speed Over Ground",
+        "-shortName": "SOG",
+        "-instance": "-1",
+        "-tankInstances": "0",
+        "-engineInstances": "0",
+        "-key": "-1",
+        "-useLabel": "false",
+        "-txInterval": "300000",
+        "-txOnChange": "false"
+      },
+      {
+        "-parameterId": "0",
+        "-title": "CAN 1",
+        "-shortName": "CON_1",
+        "-instance": "-1",
+        "-tankInstances": "0",
+        "-engineInstances": "0",
+        "-key": "-1",
+        "-useLabel": "false",
+        "-txInterval": "300000",
+        "-txOnChange": "true"
+      },
+      {
+        "-parameterId": "1",
+        "-title": "CAN 2",
+        "-shortName": "CON_2",
+        "-instance": "-1",
+        "-tankInstances": "0",
+        "-engineInstances": "0",
+        "-key": "-1",
+        "-useLabel": "false",
+        "-txInterval": "300000",
+        "-txOnChange": "true"
+      }
+    ]
+  }
+}

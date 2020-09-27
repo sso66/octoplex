@@ -1,0 +1,15 @@
+/* circumference.sass */
+:root {
+  --percent: 60;
+}
+
+circle {
+  stroke: #000;
+  stroke-width: 10;
+  stroke-dasharray: calc(314.2857142857 * var(--percent)), 314.2857142857;
+  fill: #fff;
+}
+
+/* eof */
+
+/*# sourceMappingURL=circumference.css.map */

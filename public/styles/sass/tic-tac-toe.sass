@@ -1,0 +1,63 @@
+/* react.css: tic-tac-toe game styles
+
+$purple: hsl(275, 87%,45%)
+$purple-invert: finColorInvert($purple)
+
+body
+  background-color: orange
+  font: 2em "century Gothic", Futura, sans-serif
+
+ol, ul
+  padding-left: 30px
+
+canvas
+  background-color: white
+
+#root
+  background-color: black
+  color: white
+
+#errors
+  background-color: #c00
+  color: #fff
+  display: none
+  margin: -20px -20px 20px
+  padding: 20px
+  white-space: pre-wrap
+
+.status
+  color: white
+  font-size: 1.2em
+  margin-bottom: 10px
+
+.board-row:after
+  clear: both
+  content: ""
+  display: table
+
+.square
+  float: left
+  width: 34px
+  height: 34px
+  background-color: #fff
+  margin-right: -1px
+  margin-top: -1px
+  border: 1px solid #999
+  padding: 0
+  font-size: 24px
+  font-weight: bold
+  line-height: 34
+  text-align: center
+  &:focus
+    outline: none
+
+.kbd-navigaition .square:focus
+  background: #ddd
+
+.game
+  display: flex
+
+.game-info
+  margin-left: 20px
+
+/* eof
